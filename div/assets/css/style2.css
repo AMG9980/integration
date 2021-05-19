@@ -1,0 +1,56 @@
+*{
+background :dimgray
+
+}
+
+.box {
+            
+            top: 50%;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+            
+            }
+            .box h1 {
+                color:white;
+                text-transform: uppercase;
+                font-weight: 500;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                
+                }
+                .box input[ type = "text"], .box input[ type = "number"]  {
+                border :0;
+                background: none;
+                display: block;
+                margin: 20px auto;
+                text-align:center ;
+                border : 2px solid #3498db;
+                padding: 14px 10px;
+                width: 200px;
+                outline: none;
+                border-radius: 24px;
+                transition: 0.2s; 
+                background-color:antiquewhite ;
+                
+                
+                }
+                .box input[ type = "text"]:focus, .box input[ type = "number"]:focus  {
+                width: 280px;
+                border-color: #2ecc71;
+                }
+                .box input[type="submit"]{
+                    margin: 20px auto;
+                    border: 0;
+                    display: block;
+                    border-radius: 24px;
+                    border: 2px solid #2ecc71;
+                    padding: 14px 40px;
+                    outline: none;
+                    color: #2ecc71;
+                    background: none;
+                    transition: 0.25s;
+                    cursor: pointer;
+                }
+                .box input[type="submit"]:hover{
+                    background-color: #2ecc71 ;
+                    
+                    }

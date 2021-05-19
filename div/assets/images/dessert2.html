@@ -1,0 +1,1675 @@
+<!DOCTYPE html>
+<html class="no-js doc-rubric-nutrition" lang="fr">
+<head>
+        <script>
+        window.gdprAppliesGlobally=true;
+        (function(){function a(e){if(!window.frames[e]){if(document.body&&document.body.firstChild){var t=document.body;var n=document.createElement("iframe");n.style.display="none";n.name=e;n.title=e;t.insertBefore(n,t.firstChild)}
+        else{setTimeout(function(){a(e)},5)}}}function e(n,r,o,c,s){function e(e,t,n,a){if(typeof n!=="function"){return}if(!window[r]){window[r]=[]}var i=false;if(s){i=s(e,t,n)}if(!i){window[r].push({command:e,parameter:t,callback:n,version:a})}}e.stub=true;function t(a){if(!window[n]||window[n].stub!==true){return}if(!a.data){return}
+            var i=typeof a.data==="string";var e;try{e=i?JSON.parse(a.data):a.data}catch(t){return}if(e[o]){var r=e[o];window[n](r.command,r.parameter,function(e,t){var n={};n[c]={returnValue:e,success:t,callId:r.callId};a.source.postMessage(i?JSON.stringify(n):n,"*")},r.version)}}
+            if(typeof window[n]!=="function"){window[n]=e;if(window.addEventListener){window.addEventListener("message",t,false)}else{window.attachEvent("onmessage",t)}}}e("__tcfapi","__tcfapiBuffer","__tcfapiCall","__tcfapiReturn");a("__tcfapiLocator");(function(e){
+            var t=document.createElement("script");t.id="spcloader";t.type="text/javascript";t.async=true;t.src="https://sdk.privacy-center.org/"+e+"/loader.js?target="+document.location.hostname;t.charset="utf-8";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)})("1c7a6a97-5c7c-4b1d-8ea2-9ffa2349a26b")})();
+    </script>
+
+    <script type="text/javascript">
+        !function(o,r){var d=o.Didomi||{},t=!1,a=!1,s=!1,l=!1,c="",i=o.console||{log:function(e){}},u=function(){},p={wall_active:!0};function n(){u=!1,r.getElementById("didomi-host").remove();var e=r.getElementById("old-didomi-host");e.setAttribute("id","didomi-host"),e.style.display="block",d.notice.show("informations")}function m(){return"<div class='didomi-popup-notice-logo-container'><img class='didomi-popup-notice-logo' alt='Logo' src='"+d.getConfig().app.logoUrl+"'></div>"}function f(){var e,t;r.getElementById("old-didomi-host")||(e=r.getElementById("didomi-host"),(i=r.createElement("div")).setAttribute("id","didomi-host"),i.setAttribute("unifywall",!0),i.innerHTML=e.innerHTML,(t=i.querySelector(".didomi-popup-view"))&&(t.id="unify_wall_content",e.setAttribute("id","old-didomi-host"),e.style.display="none",r.body.insertBefore(i,r.getElementById("old-didomi-host")),r.body.classList.add("didomi-popup-open"),setTimeout(function(){r.body.classList.add("didomi-popup-open")},200),u=!1));var i=r.getElementById("unify_wall_content");return i&&(i.innerHTML=m()+"<div class='didomi-popup-notice-text-container'><div class='didomi-popup-notice-text'>"+p.paywall_text+"<div id='buttons' class='multiple didomi-buttons didomi-popup-notice-buttons'><button class='didomi-components-button didomi-button didomi-button-highlight standard-button' id='unify-accept-finally'><span>"+p.btn_accept_finally+"</span></button><button class='didomi-components-button didomi-button didomi-button-highlight standard-button' id='unify-goto-subscribe'><span>"+p.btn_abo_text+"</span></button></div></div></div>",i.querySelector("#unify-accept-finally").addEventListener("click",function(){n(),d.setUserAgreeToAll(),r.body.classList.remove("didomi-popup-open")}),i.querySelector("#unify-goto-subscribe").addEventListener("click",function(){v()}),u=!1,1)}function v(){var o=r.getElementById("unify_wall_content");if(!o)return!1;var e=p.legal_text_full.split("</p>",1)[0]+"</p>";o.innerHTML=m()+"<div class='didomi-popup-notice-text-container'><div class='didomi-popup-notice-text'><div class='didomi-popup-title'>"+p.prepayment_title+"</div><form action='/?payment' method='post' id='prepayment-form'><div class='didomi-popup-form-row'><div class='didomi-field-container didomi-field-container-2'><input type='email' name='email' value='"+c+"' placeholder='Adresse e-mail*' required /></div><div><small>* champ obligatoire</small></div></div><div class='didomi-popup-form-row'><p><strong>"+p.legal_text_title+"</strong></p>"+e+"<p style='margin-top:-5px; text-align:center'><svg id='unify-see-legal-screen' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 452 452' style='width:20px;margin:0 auto;cursor:pointer'><path fill='"+d.getConfig().theme.color+"' d='m226 355c-8 0-16-3-22-9l-194-194c-12-12-12-32 0-45 12-12 32-12 45 0l172 172 172-172c12-12 32-12 45 0 12 12 12 32 0 45l-194 194c-6 6-14 9-22 9z'/></svg></p></div><div class='multiple didomi-buttons didomi-popup-notice-buttons'><button id='unify-goback' class='didomi-components-button didomi-button standard-button'><span>Retour</span></button><button id='unify-pay' "+(c?"":"disabled")+" class='didomi-components-button didomi-button didomi-button-highlight standard-button'><span>Confirmer</span></button></div></form></div></div>",o.querySelector("#unify-goback").addEventListener("click",function(e){e.preventDefault(),o.querySelector("input[name=email]").remove(),f()}),o.querySelector("#unify-pay").addEventListener("click",function(e){t(),e.preventDefault(),o.querySelector("input[name=email]").remove(),g()}),o.querySelector("#unify-see-legal-screen").addEventListener("click",function(e){t(),e.preventDefault(),o.querySelector("input[name=email]").remove(),function(){var e=r.getElementById("unify_wall_content");if(!e)return;e.innerHTML=m()+"<div class='didomi-popup-notice-text-container'><div class='didomi-popup-notice-text'><p><strong>"+p.legal_text_title+"</strong></p>"+p.legal_text_full+"<p style='margin-top:-5px; text-align:center; transform:rotate(180deg)'><svg class='unify-goback' id='unify-see-legal-screen-back' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 452 452' style='width:20px;margin:0 auto;cursor:pointer'><path fill='"+d.getConfig().theme.color+"' d='m226 355c-8 0-16-3-22-9l-194-194c-12-12-12-32 0-45 12-12 32-12 45 0l172 172 172-172c12-12 32-12 45 0 12 12 12 32 0 45l-194 194c-6 6-14 9-22 9z'/></svg></p></div></div>",e.querySelectorAll(".unify-goback").forEach(function(e){e.addEventListener("click",v)}),u=!1}()});var t=function(e){var t=o.querySelector("input[name=email]"),i=t.checkValidity(),n=o.querySelector("#unify-pay");i&&(c=t.value,n.removeAttribute("disabled")),i||n.hasAttribute("disabled")||n.setAttribute("disabled","disabled")};return o.querySelector("input[name=email]").addEventListener("keyup",t),o.querySelector("input[name=email]").addEventListener("onblur",t),s||_(function(){}),!(u=!1)}function y(e){e=e||"Merci de réitérer ultérieurement",o.clearTimeout(a);var t=r.getElementById("unify_wall_content");if(!t)return!1;t.innerHTML=m()+"<div class='didomi-popup-notice-text-container'><div class='didomi-popup-notice-text' style='text-align:center'><div class='didomi-popup-title'>Désolé...</div><p>Une erreur s'est produite : <em>"+e+"</em></p></div></div>",u=!1}function g(){var t=r.getElementById("unify_wall_content");if(!t)return!1;if((i=r.getElementById("unify_wall_content"))&&(i.scrollHeight,i.scrollWidth,i.innerHTML=m()+"<div class='didomi-popup-notice-text-container'><div class='didomi-popup-notice-text' style='text-align:center'><style>.unifywall-loader-icon {display: block;width: 80px;height: 80px;margin-left: auto;margin-right: auto;}.unifywall-loader-icon:after {content: \" \";display: block;width: 64px;height: 64px;margin: 8px;border-radius: 50%;border: 6px solid "+d.getConfig().theme.color+";border-color: "+d.getConfig().theme.color+" transparent "+d.getConfig().theme.color+" transparent;animation: unifywall-loader-icon 1.2s linear infinite;}@keyframes unifywall-loader-icon {0% { transform: rotate(0deg);}100% { transform: rotate(360deg);}}</style><div class='unifywall-loader-icon'></div><span class='didomi-popup-notice'>Chargement en cours...</span></div></div>",o.clearTimeout(a),a=o.setTimeout(function(){return y("temps d'attente dépassé")},2e4),u=!1),s){if(!l)return u=!1,void function t(i,e){if(!e){var n=w("create_intent");return void x(n,function(e){t(i,e)})}if("object"!=typeof e||!("status"in e))return void y();if("success"!==e.status)return void y();l=e.intent.client_secret;i();return}(g);o.clearTimeout(a),t.innerHTML=m()+"<div class='didomi-popup-notice-text-container'><div class='didomi-popup-notice-text'><div class='didomi-popup-title'>S'abonner à <span>"+d.getConfig().app.name+"</span></div><div class='didomi-popup-arguments'>"+p.arguments_text+"</div><form action='/?payment' method='post' id='payment-form'><div id='card-errors' role='alert'></div><div class='didomi-popup-form-row'><label for='card-number'>&#x1F512; Informations de la carte*</label><div class='didomi-field-container'><div id='card-number'></div><div id='card-expiry'></div><div id='card-cvc'></div></div><div><small>* champs obligatoires</small></div></div><div class='didomi-popup-form-row'>"+p.payment_legal_text+"</div><div class='multiple didomi-buttons didomi-popup-notice-buttons'><button id='unify-goback' class='didomi-components-button didomi-button standard-button'><span>Retour</span></button><button id='unify-pay' disabled class='didomi-components-button didomi-button didomi-button-highlight standard-button'><span>"+p.btn_pay_text+"</span></button></div></form></div></div>",t.querySelector("#unify-goback").addEventListener("click",v);var e=s.elements(),i={base:{color:"#3F3735",fontWeight:500,fontSize:"15px",fontSmoothing:"antialiased","::placeholder":{color:"#CFD7DF"},":-webkit-autofill":{color:"#e39f48"}},invalid:{color:"#E25950","::placeholder":{color:"#FFCCA5"}}},n=e.create("cardNumber",{style:i,showIcon:!0,placeholder:"Numéro de carte"});n.mount("#card-number"),e.create("cardExpiry",{style:i}).mount("#card-expiry");i=e.create("cardCvc",{style:i});return i.mount("#card-cvc"),i.on("change",function(e){t.querySelector("#unify-pay").disabled=!e.complete,t.querySelector("#card-errors").textContent=e.error?e.error.message:""}),t.querySelector("#payment-form").addEventListener("submit",function(e){e.preventDefault(),t.querySelector("#unify-pay").disabled=!0,t.querySelector("#unify-pay span").innerHTML="Vérifications en cours",s.confirmCardPayment(l,{payment_method:{card:n,billing_details:{email:c}}}).then(b)}),!(u=!1)}_(g)}function b(e){var t,i=null;"object"!=typeof e?i="Une erreur innattendue est survenue":e.error?i=e.error.message:"paymentIntent"in e&&"status"in e.paymentIntent&&"succeeded"==e.paymentIntent.status||(i="Ce paiement a été refusé, veuillez vérifier vos informations bancaires"),i?(o.document.querySelector("#unify-pay span").innerHTML=p.btn_pay_text,t=i,(i=r.getElementById("card-errors"))&&(i.textContent=t)):x(w("check_and_grant_access",{stripe_client_secret:e.paymentIntent.id}),function(e){return(!(e&&"object"==typeof e&&"status"in e&&"success"===e.status)?y:function(){var e=r.getElementById("unify_wall_content");if(!e)return;e.innerHTML=m()+"<div class='didomi-popup-notice-text-container'><div class='didomi-popup-notice-text' style='text-align:center'><div style='width:80px;margin: 0 auto 20px'><svg viewBox='0 0 44 44' xmlns='http://www.w3.org/2000/svg'><path d='M42.833 7.792L19.062 31.584l-8.833-8.833 2.937-2.938 5.896 5.896L39.895 4.876l2.937 2.917zm-4.604 10.5c.27 1.188.437 2.438.437 3.708 0 9.209-7.458 16.667-16.667 16.667S5.332 31.21 5.332 22 12.791 5.333 22 5.333c3.292 0 6.334.959 8.917 2.605l3-3a20.625 20.625 0 00-11.917-3.771C10.499 1.167 1.166 10.5 1.166 22s9.333 20.833 20.833 20.833S42.832 33.499 42.832 22c0-2.48-.458-4.854-1.25-7.063l-3.354 3.354z' fill='"+d.getConfig().theme.color+"' fill-rule='nonzero' stroke='#fff' stroke-width='1.5'/></svg></div><div class='didomi-popup-title'>Votre paiement a bien été enregistré.</div><p><span>Vous allez recevoir un e-mail de confirmation dans quelques instants.</span></p><div id='buttons' class='multiple didomi-buttons didomi-popup-notice-buttons'><button id='btn-close-confirm-payment' class='didomi-components-button didomi-button didomi-button-highlight standard-button'><span>Je commence à naviguer</span></button></div></div></div>",e.querySelector("#btn-close-confirm-payment").addEventListener("click",function(){n(),d.setUserDisagreeToAll(),r.body.classList.remove("didomi-popup-open")}),u=!1})()})}function e(){var e=r.getElementById("didomi-host");o.MutationObserver&&!t&&(t=new MutationObserver(function(e){0<e.filter(function(e){return 0<e.addedNodes.length&&e.target.className.includes("notranslate")}).filter(function(e){return e.target.className.includes("notranslate")}).length&&u&&u()}),e.setAttribute("unify_wall",!0),t.observe(e,{childList:!0,subtree:!0}))}function h(){var e,t;for(e in p.required_purposes_ids){var i=p.required_purposes_ids[e];if(!1===d.getUserConsentStatusForPurpose(i))return!1}for(t in p.required_vendors_ids){var n=p.required_vendors_ids[t];if(!1===d.getUserConsentStatusForVendor(n))return!1}return!0}function _(e){var t=r.createElement("script");t.type="text/javascript",t.src="https://js.stripe.com/v3/",t.onload=function(){s=Stripe(p.stripe_publishable_key,{locale:"fr"}),e()},o.document.head.appendChild(t)}function x(e,t){var i=new XMLHttpRequest;i.onreadystatechange=function(){var e;i.readyState==XMLHttpRequest.DONE&&(e=JSON.parse(i.responseText),t(e))},i.ontimeout=function(){return y("Délai d'attente dépassé")},i.onerror=function(e){t(!0)},i.open("POST",e),i.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),i.withCredentials=!0,i.send()}function w(e,t){var i=p.stripe_proxy_url;if(i+=i.includes("?")?"&":"?",i+="action="+e,t)for(var n in t)i+="&"+n+"="+encodeURIComponent(t[n]);return i}o.didomiConfig=o.didomiConfig||{},o.didomiConfig.notice=o.didomiConfig.notice||{},"enable"in o.didomiConfig.notice&&!1===o.didomiConfig.notice.enable||(!0!=!!r.cookie.split("; ").find(function(e){return e.startsWith("unifywall_paid=")})?(o.didomiConfig.notice.enable=!0,o.didomiOnReady=o.didomiOnReady||[],o.didomiOnReady.push(function(){d=o.Didomi||{},0!=function(){0 in d.getConfig();0 in d.getConfig().custom;(p=Object.assign({},p,d.getConfig().custom.unify_wall)).debug&&p.debug;if(0<["wall_active","paywall_text","btn_abo_text","btn_accept_finally","required_purposes_ids","required_vendors_ids","stripe_publishable_key","stripe_proxy_url","prepayment_title","legal_text_title","legal_text_full","arguments_text","payment_legal_text","btn_pay_text"].reduce(function(e,t){return t in p?e:(i.error("-> Unify Wall: Missing mandatory variable "+t),e+1)},0))return!1;return!0}()&&p.wall_active&&(0==d.notice.isVisible()&&0==h()&&0==d.shouldConsentBeCollected()&&(e(),u=function(){f()},d.notice.show("informations")),d.on("notice.clickdisagree",function(){u=function(){f()},f()}),d.on("preferences.clickdisagreetoall",function(){e(),u=function(){f()},d.preferences.hide(),d.notice.show("informations")}),d.on("preferences.clicksavechoices",function(){0==h()&&(e(),u=function(){f()},d.preferences.hide(),d.notice.show("informations"))}),d.on("notice.shown",function(){}))})):o.didomiConfig.notice.enable=!1)}(window,document);
+
+    </script>
+
+    <title>Desserts préférés des Français - Doctissimo    </title>
+
+    <link rel="preconnect" href="https://cdn.permutive.com">
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://www.google-analytics.com" />
+    <link rel="preconnect" href="https://stats.g.doubleclick.net" />
+    <link rel="dns-prefetch" href="https://connect.facebook.net" />
+
+            <link rel="preconnect" href="https://cdn.prod.docfr.doc-media.fr" />
+        <link rel="preconnect" href="https://cdn.prod.docfr.doc-media.fr" crossorigin />
+            <link rel="preconnect" href="https://cdn1.prod.docfr.doc-media.fr" />
+        <link rel="preconnect" href="https://cdn1.prod.docfr.doc-media.fr" crossorigin />
+            <link rel="preconnect" href="https://cdn2.prod.docfr.doc-media.fr" />
+        <link rel="preconnect" href="https://cdn2.prod.docfr.doc-media.fr" crossorigin />
+            <link rel="preconnect" href="https://cdn3.prod.docfr.doc-media.fr" />
+        <link rel="preconnect" href="https://cdn3.prod.docfr.doc-media.fr" crossorigin />
+    
+            <link rel="preconnect" href="https://resize.prod.docfr.doc-media.fr" />
+            <link rel="preconnect" href="https://resize1.prod.docfr.doc-media.fr" />
+            <link rel="preconnect" href="https://resize2.prod.docfr.doc-media.fr" />
+            <link rel="preconnect" href="https://resize3.prod.docfr.doc-media.fr" />
+    
+        
+<meta charset="utf-8"/>
+<meta name="viewport"                       content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="description"                    content="Votre coup de cœur sucré est-il dans le top 10 des desserts préférés des Français ? Il ne vous reste qu&#039;à vérifier." />
+<meta name="keywords"                       content="dessert préféré, desserts préférés, desserts préférés des Français" />
+<meta name="author"                         content="Doctissimo"/>
+
+<meta property="og:title"                   content="Desserts préférés des Français - Doctissimo" />
+<meta property="og:description"             content="Votre coup de cœur sucré est-il dans le top 10 des desserts préférés des Français ? Il ne vous reste qu&#039;à vérifier." />
+<meta property="og:type"                    content="article" />
+<meta property="og:url"                     content="https://www.doctissimo.fr/nutrition/diaporamas/desserts-preferes" />
+<meta property="og:site_name"               content="Doctissimo" />
+<meta property="og:image"                   content="https://resize.prod.docfr.doc-media.fr/rcrop/600,315,center-middle/img/var/doctissimo/storage/images/fr/www/nutrition/diaporamas/desserts-preferes/2189765-1-fre-FR/Les-10-desserts-preferes-des-Francais.jpg" />
+<meta property="og:image:width"             content="600"/>
+<meta property="og:image:height"            content="315"/>
+<meta property="og:locale"                  content="fr_FR"/>
+
+<meta property="fb:app_id"                  content="290600267704798" />
+<meta name="facebook-domain-verification" content="no6odwazkf1aogs2vac6pjsz817ikb" />
+
+<meta name="twitter:title"                  content="Desserts préférés des Français - Doctissimo" />
+<meta name="twitter:description"            content="Votre coup de cœur sucré est-il dans le top 10 des desserts préférés des Français ? Il ne vous reste qu&#039;à vérifier." />
+<meta name="twitter:card"                   content="summary" />
+<meta name="twitter:site"                   content="@doctissimo" />
+<meta name="twitter:image"                  content="https://resize.prod.docfr.doc-media.fr/rcrop/600,315,center-middle/img/var/doctissimo/storage/images/fr/www/nutrition/diaporamas/desserts-preferes/2189765-1-fre-FR/Les-10-desserts-preferes-des-Francais.jpg" />
+<meta name="twitter:url"                    content="https://www.doctissimo.fr/nutrition/diaporamas/desserts-preferes" />
+<meta name="twitter:domain"                 content="doctissimo.fr" />
+
+    <meta name="apple-itunes-app" content="app-id=850438927, affiliate-data=at=10lxMt">    <meta name="apple-itunes-app" content="app-id=550460079, affiliate-data=at=10lxMt">    <meta name="apple-itunes-app" content="app-id=324685957, affiliate-data=at=10lxMt">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+<link rel="manifest" href="/site.webmanifest"/>
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5053ff"/>
+
+<meta name="verify-v1"                      content="J3d60lX02f3NLFkGPztWLXcM2PFErfCVdnd+4+7jw/A=" />
+<meta name="robots"                         content="index, follow" />
+<meta name="robots"                         content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="application-name"               content="Doctissimo" />
+
+<meta name="theme-color"                    content="#ffffff"/>
+<meta name="msapplication-TileColor"        content="#ffffff"/>
+<meta name="msapplication-config"           content="/browserconfig.xml"/>
+<meta name="msapplication-tooltip"          content="Santé et bien être avec Doctissimo" />
+<meta name="msapplication-window"           content="width=1024;height=768" />
+<meta name="msapplication-navbutton-color"  content="#5053ff" />
+<meta name="msapplication-task"             content="name=Rechercher un article;action-uri=http://recherche.doctissimo.fr#utm_source=IE9&amp;utm_campaign=etude-epinglage&amp;utm_medium=recherche_site;icon-uri=http://medias.doctissimo.fr/html/doc/pinned-site/img/favicon16.ico" />
+<meta name="msapplication-task"             content="name=Rechercher un médicament; action-uri=http://sante.doctissimo.fr/medicaments/recherche-medicament.htm#utm_source=IE9&amp;utm_campaign=etude-epinglage&amp;utm_medium=recherche_medicament;icon-uri=http://medias.doctissimo.fr/html/doc/pinned-site/img/favicon16.ico" />
+<meta name="msapplication-task"             content="name=Poster sur le forum; action-uri=http://forum.doctissimo.fr#utm_source=IE9&amp;utm_campaign=etude-epinglage&amp;utm_medium=forum; icon-uri=http://medias.doctissimo.fr/html/doc/pinned-site/img/favicon16.ico" />
+<meta name="msapplication-task"             content="name=Accéder au club Doctissimo; action-uri=http://club.doctissimo.fr#utm_source=IE9&amp;utm_campaign=etude-epinglage&amp;utm_medium=club; icon-uri=http://medias.doctissimo.fr/html/doc/pinned-site/img/favicon16.ico" />
+<meta name="msapplication-task"             content="name=Rechercher une maternité; action-uri=http://maternites.doctissimo.fr#utm_source=IE9&amp;utm_campaign=etude-epinglage&amp;utm_medium=recherche_maternite; icon-uri=http://medias.doctissimo.fr/html/doc/pinned-site/img/favicon16.ico" />
+
+<meta name="p:domain_verify"                content="92002e2d669f4518a5dd6492da1ff93d" />
+
+            <link rel="canonical" href="https://www.doctissimo.fr/nutrition/diaporamas/desserts-preferes" />
+    
+        <style>@font-face{font-family:doc-font;src:url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/doc-icon/doc-font.eot?lzct7l);src:url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/doc-icon/doc-font.eot?lzct7l#iefix) format('embedded-opentype'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/doc-icon/doc-font.ttf?lzct7l) format('truetype'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/doc-icon/doc-font.woff?lzct7l) format('woff'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/doc-icon/doc-font.svg?lzct7l#doc-font) format('svg');font-weight:400;font-style:normal;font-display:block}[class*=' doc-icon-'],[class^=doc-icon-]{font-family:doc-font!important;speak:never;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.doc-icon-check:before{content:"\e900"}.doc-icon-apple:before{content:"\e901"}.doc-icon-youtube:before{content:"\e902"}.doc-icon-youtube-circle:before{content:"\e903"}.doc-icon-whatsapp-circle .path1:before{content:"\e904"}.doc-icon-whatsapp-circle .path2:before{content:"\e905";margin-left:-1em}.doc-icon-weight:before{content:"\e906"}.doc-icon-user:before{content:"\e907"}.doc-icon-twitter-circle:before{content:"\e908"}.doc-icon-timer:before{content:"\e909"}.doc-icon-search:before{content:"\e90a"}.doc-icon-search-2:before{content:"\e90b"}.doc-icon-quote:before{content:"\e90c"}.doc-icon-pregnancy:before{content:"\e90d"}.doc-icon-play:before{content:"\e90e"}.doc-icon-pinterest:before{content:"\e90f"}.doc-icon-pinterest-circle:before{content:"\e910"}.doc-icon-pill:before{content:"\e911"}.doc-icon-list:before{content:"\e912"}.doc-icon-life-ring:before{content:"\e913"}.doc-icon-instatagram:before{content:"\e914"}.doc-icon-instagram-circle:before{content:"\e915"}.doc-icon-facebook:before{content:"\e916"}.doc-icon-facebook-circle:before{content:"\e917"}.doc-icon-email-circle:before{content:"\e918"}.doc-icon-compass .path1:before{content:"\e919";color:#5053ff}.doc-icon-compass .path2:before{content:"\e91a";margin-left:-1em;color:#ff7b7b}.doc-icon-compass .path3:before{content:"\e91b";margin-left:-1em;color:#fff}.doc-icon-compass-half:before{content:"\e91c"}.doc-icon-collaboration:before{content:"\e91d"}.doc-icon-close:before{content:"\e91e"}.doc-icon-chat:before{content:"\e91f"}.doc-icon-book:before{content:"\e920"}.doc-icon-book-medical:before{content:"\e921"}.doc-icon-bars:before{content:"\e922"}.doc-icon-badge-check:before{content:"\e923"}.doc-icon-arrow-top:before{content:"\e924"}.doc-icon-arrow-right:before{content:"\e925"}.doc-icon-arrow-left:before{content:"\e926"}.doc-icon-arrow-bottom:before{content:"\e927"}.doc-icon-album:before{content:"\e928"}@font-face{font-family:Merriweather;font-style:normal;font-weight:300;font-display:swap;src:url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/merriweather/merriweather-v22-latin-300.eot);src:local('Merriweather Light'),local('Merriweather-Light'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/merriweather/merriweather-v22-latin-300.eot?#iefix) format('embedded-opentype'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/merriweather/merriweather-v22-latin-300.woff2) format('woff2'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/merriweather/merriweather-v22-latin-300.woff) format('woff'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/merriweather/merriweather-v22-latin-300.ttf) format('truetype'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/merriweather/merriweather-v22-latin-300.svg#Merriweather) format('svg')}@font-face{font-family:Merriweather;font-style:italic;font-weight:300;font-display:swap;src:url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/merriweather/merriweather-v22-latin-300italic.eot);src:local('Merriweather Light Italic'),local('Merriweather-LightItalic'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/merriweather/merriweather-v22-latin-300italic.eot?#iefix) format('embedded-opentype'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/merriweather/merriweather-v22-latin-300italic.woff2) format('woff2'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/merriweather/merriweather-v22-latin-300italic.woff) format('woff'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/merriweather/merriweather-v22-latin-300italic.ttf) format('truetype'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/merriweather/merriweather-v22-latin-300italic.svg#Merriweather) format('svg')}@font-face{font-family:Merriweather;font-style:normal;font-weight:400;font-display:swap;src:url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/merriweather/merriweather-v22-latin-regular.eot);src:local('Merriweather Regular'),local('Merriweather-Regular'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/merriweather/merriweather-v22-latin-regular.eot?#iefix) format('embedded-opentype'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/merriweather/merriweather-v22-latin-regular.woff2) format('woff2'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/merriweather/merriweather-v22-latin-regular.woff) format('woff'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/merriweather/merriweather-v22-latin-regular.ttf) format('truetype'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/merriweather/merriweather-v22-latin-regular.svg#Merriweather) format('svg')}@font-face{font-family:Merriweather;font-style:normal;font-weight:700;font-display:swap;src:url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/merriweather/merriweather-v22-latin-700.eot);src:local('Merriweather Bold'),local('Merriweather-Bold'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/merriweather/merriweather-v22-latin-700.eot?#iefix) format('embedded-opentype'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/merriweather/merriweather-v22-latin-700.woff2) format('woff2'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/merriweather/merriweather-v22-latin-700.woff) format('woff'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/merriweather/merriweather-v22-latin-700.ttf) format('truetype'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/merriweather/merriweather-v22-latin-700.svg#Merriweather) format('svg')}@font-face{font-family:Merriweather;font-style:italic;font-weight:700;font-display:swap;src:url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/merriweather/merriweather-v22-latin-700italic.eot);src:local('Merriweather Bold Italic'),local('Merriweather-BoldItalic'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/merriweather/merriweather-v22-latin-700italic.eot?#iefix) format('embedded-opentype'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/merriweather/merriweather-v22-latin-700italic.woff2) format('woff2'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/merriweather/merriweather-v22-latin-700italic.woff) format('woff'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/merriweather/merriweather-v22-latin-700italic.ttf) format('truetype'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/merriweather/merriweather-v22-latin-700italic.svg#Merriweather) format('svg')}@font-face{font-family:Montserrat;font-style:normal;font-weight:300;font-display:swap;src:url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/montserrat/montserrat-v14-latin-300.eot);src:local('Montserrat Light'),local('Montserrat-Light'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/montserrat/montserrat-v14-latin-300.eot?#iefix) format('embedded-opentype'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/montserrat/montserrat-v14-latin-300.woff2) format('woff2'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/montserrat/montserrat-v14-latin-300.woff) format('woff'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/montserrat/montserrat-v14-latin-300.ttf) format('truetype'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/montserrat/montserrat-v14-latin-300.svg#Montserrat) format('svg')}@font-face{font-family:Montserrat;font-style:italic;font-weight:300;font-display:swap;src:url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/montserrat/montserrat-v14-latin-300italic.eot);src:local('Montserrat Light Italic'),local('Montserrat-LightItalic'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/montserrat/montserrat-v14-latin-300italic.eot?#iefix) format('embedded-opentype'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/montserrat/montserrat-v14-latin-300italic.woff2) format('woff2'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/montserrat/montserrat-v14-latin-300italic.woff) format('woff'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/montserrat/montserrat-v14-latin-300italic.ttf) format('truetype'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/montserrat/montserrat-v14-latin-300italic.svg#Montserrat) format('svg')}@font-face{font-family:Montserrat;font-style:normal;font-weight:400;font-display:swap;src:url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/montserrat/montserrat-v14-latin-regular.eot);src:local('Montserrat Regular'),local('Montserrat-Regular'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/montserrat/montserrat-v14-latin-regular.eot?#iefix) format('embedded-opentype'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/montserrat/montserrat-v14-latin-regular.woff2) format('woff2'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/montserrat/montserrat-v14-latin-regular.woff) format('woff'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/montserrat/montserrat-v14-latin-regular.ttf) format('truetype'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/montserrat/montserrat-v14-latin-regular.svg#Montserrat) format('svg')}@font-face{font-family:Montserrat;font-style:normal;font-weight:500;font-display:swap;src:url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/montserrat/montserrat-v14-latin-500.eot);src:local('Montserrat Medium'),local('Montserrat-Medium'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/montserrat/montserrat-v14-latin-500.eot?#iefix) format('embedded-opentype'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/montserrat/montserrat-v14-latin-500.woff2) format('woff2'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/montserrat/montserrat-v14-latin-500.woff) format('woff'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/montserrat/montserrat-v14-latin-500.ttf) format('truetype'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/montserrat/montserrat-v14-latin-500.svg#Montserrat) format('svg')}@font-face{font-family:Montserrat;font-style:normal;font-weight:600;font-display:swap;src:url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/montserrat/montserrat-v14-latin-600.eot);src:local('Montserrat SemiBold'),local('Montserrat-SemiBold'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/montserrat/montserrat-v14-latin-600.eot?#iefix) format('embedded-opentype'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/montserrat/montserrat-v14-latin-600.woff2) format('woff2'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/montserrat/montserrat-v14-latin-600.woff) format('woff'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/montserrat/montserrat-v14-latin-600.ttf) format('truetype'),url(https://cdn.prod.docfr.doc-media.fr/bundles/app/fonts/montserrat/montserrat-v14-latin-600.svg#Montserrat) format('svg')}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}header,nav{display:block}a{background-color:transparent}strong{font-weight:700}h1{font-size:2em;margin:.67em 0}img{border:0}input{color:inherit;font:inherit;margin:0}input[type=submit]{-webkit-appearance:button}input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:12px;line-height:1.42857143;color:#333;background-color:#fff}input{font-family:inherit;font-size:inherit;line-height:inherit}a{color:#337ab7;text-decoration:none}img{vertical-align:middle}.container{margin-right:auto;margin-left:auto;padding-left:8px;padding-right:8px}@media (min-width:768px){.container{width:736px}}@media (min-width:1024px){.container{width:1000px}}@media (min-width:1200px){.container{width:1000px}}.row{margin-left:-8px;margin-right:-8px}.col-md-12,.col-md-4,.col-md-8{position:relative;min-height:1px;padding-left:8px;padding-right:8px}@media (min-width:1024px){.col-md-12,.col-md-4,.col-md-8{float:left}.col-md-12{width:100%}.col-md-8{width:66.66666667%}.col-md-4{width:33.33333333%}}.collapse{display:none}.container:after,.container:before,.row:after,.row:before{content:" ";display:table}.container:after,.row:after{clear:both}.pull-right{float:right!important}@-ms-viewport{width:device-width}[class^=doc-icon-]{font-family:doc-font!important;speak:never;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.doc-icon-search:before{content:"\e900"}.doc-icon-user:before{content:"\e901"}.doc-icon-instatagram:before{content:"\e903"}.doc-icon-close:before{content:"\e90b"}.doc-icon-facebook:before{content:"\e910"}.doc-icon-badge-check:before{content:"\e913"}.doc-icon-pinterest:before{content:"\e914"}.doc-icon-youtube:before{content:"\e918"}.doc-icon-arrow-left:before{content:"\e91e"}body{font:normal 400 16px/27px Montserrat,sans-serif;color:#21242c}@media screen and (min-width:1024px){body{font-size:18px;line-height:28px}}a{color:#5053ff;text-decoration:none}strong{font-weight:600}h1,h5{font-family:Merriweather,serif;font-weight:700}h1{font-size:30px;line-height:32px}@media screen and (min-width:1024px){h1{font-size:35px;line-height:43px}}h5{font-size:16px;line-height:22px}@media screen and (min-width:1024px){h5{font-size:18px;line-height:28px}}ol,ul{margin:8px auto 16px auto;padding:0;list-style:none}ol li,ul li{padding-left:24px;margin-bottom:16px}ul li:before{content:"●";font-size:14px;width:24px;margin-left:-24px;float:left}ol{padding-left:32px;list-style-type:decimal}.doc-text-xs{font-size:12px;line-height:18px}.doc-text-sm{font-size:14px;line-height:18px}@media screen and (min-width:1024px){.doc-text-sm{font-size:16px;line-height:20px}}.doc-content h1{margin:0 auto 16px auto}@media screen and (min-width:1024px){.doc-content h1{margin:0 auto 24px auto}}.category-underline>span{position:relative;display:inline-block;z-index:0}.category-underline>span:after{content:"";position:absolute;height:8px;width:100%;left:0;bottom:7px;z-index:-1}.category-underline.famille>span:after{background:#89e9ff}.category-underline.sante>span:after{background:#93f1c7}.category-underline.bienetre>span:after{background:#ffd79e}@media (min-width:1024px){.doc-px-md-0{padding-left:0!important;padding-right:0!important}.doc-pl-md-0{padding-left:0!important}}.doc-p-1{padding:8px}.doc-px-1{padding-left:8px;padding-right:8px}.doc-pl-1{padding-left:8px}.doc-mr-1{margin-right:8px}.doc-my-neg-1{margin:-8px auto}.doc-p-2{padding:16px}.doc-px-2{padding-left:16px;padding-right:16px}.doc-py-2{padding-top:16px;padding-bottom:16px}@media (min-width:1024px){.doc-py-md-2{padding-top:16px!important;padding-bottom:16px!important}}.doc-my-2{margin:16px auto}.doc-mb-2{margin-bottom:16px}.doc-py-3{padding-top:24px;padding-bottom:24px}.doc-my-3{margin:24px auto}.doc-mt-3{margin-top:24px}.doc-mb-3{margin-bottom:24px}@media (min-width:1024px){.doc-px-md-5{padding-left:40px!important;padding-right:40px!important}}.bg-color-blue-0{background-color:#f0f0ff}.color-blue-50{color:#5053ff}.bg-color-category-famille{background-color:#89e9ff}.bg-color-category-sante{background-color:#93f1c7}.bg-color-category-bienetre{background-color:#ffd79e}.color-grey-medium{color:#939393}.doc-grid-2-auto{display:grid;grid-template-columns:auto auto;grid-gap:8px;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.text-right{text-align:right}.text-center{text-align:center}.doc-img-responsive-100{display:block;width:100%;height:auto}.d-flex{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}.justify-content-between{-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}.align-items-center{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.rounded{border-radius:8px}.rounded-lg{border-radius:18px}.rounded-circle{border-radius:50%}.shadow{-webkit-box-shadow:0 1px 7px 0 rgba(0,0,0,.15);box-shadow:0 1px 7px 0 rgba(0,0,0,.15)}.doc-btn{border-radius:8px;display:inline-block;font-family:Montserrat,sans-serif;font-size:14px;line-height:28px;font-weight:500;padding:0 16px;color:#21242c;background-color:transparent;border:none;text-align:center;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;background-image:none;white-space:nowrap}@media (min-width:1024px){.doc-btn{padding:0 24px;font-size:15px;line-height:36px}}.doc-btn.doc-btn--outline-primary{color:#5053ff;border:solid .6px #5053ff}.card{position:relative;margin-bottom:16px}.card .card__body{margin-top:8px}.card .card__body>div:first-child{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.card .card__body>div:first-child span{font-size:14px;line-height:18px;margin-right:8px}.card .card__body>div:first-child span a{position:relative;z-index:2;color:#21242c}.card .card__body .strip{display:inline-block;width:50px;height:2px;margin-top:1px}.card .card__body .card__body__title{margin:8px auto 0 auto;font-size:19px;line-height:27px}@media (min-width:1024px){.card .card__body .card__body__title{font-size:20px;line-height:28px}}.card .card__body .card__body__title a{color:#21242c;display:inline-block}.card .card__body .card__body__title a:before{bottom:0;content:" ";left:0;position:absolute;right:0;top:0}.doc-collapse .doc-collapse__btn{font-family:Montserrat,sans-serif;font-size:14px;line-height:18px;font-weight:600;text-decoration:none}.doc-collapse .doc-collapse__btn .doc-collapse__btn__open{display:inline}.doc-collapse .doc-collapse__btn .doc-collapse__btn__close{display:none}@media screen and (min-width:1024px){.doc-collapse .doc-collapse__btn{font-size:16px;line-height:20px}}.doc-collapse .doc-collapse__btn.doc-collapse__btn--link{color:#5053ff}#doc-search-text{text-align:left;height:100%;font-size:18px;display:inline-block;border:none;outline:0;color:#21242c;padding:3px;padding-left:35%;padding-right:60px;width:0;position:absolute;top:0;right:0;background:0 0;background-color:#fff;z-index:3}@media screen and (min-width:768px){#doc-search-text{padding-left:45%}}#doc-search-text::-webkit-input-placeholder{text-align:left;padding-left:5px}#doc-search-text::-moz-placeholder{text-align:left;padding-left:5px}#doc-search-text:-ms-input-placeholder{text-align:left;padding-left:5px}.search-wrapper{display:none}header{z-index:2000;top:-150px;background:#fff}header>div.container{background-color:#fff!important}@media (max-width:1024px){header>div.container{padding:0}}@media (min-width:1024px){header>div.container{padding:0 10px}}header>div.container>div:first-child{position:relative;padding:16px 0}header>div.container .sub-header{position:relative;border-top:solid 1px rgba(80,83,255,.2)}header>div.container>div .light-header,header>div.container>div.sub-header{display:none}@media (min-width:1024px){body:not(.header-sticky) header>div.container>div:first-child .doc-burger-menu{display:none}body:not(.header-sticky) header>div.container>div:first-child .right-items .doc-btn{display:none}body:not(.header-sticky) header>div.container>div.sub-header{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}body:not(.header-sticky) header>div.container>div .light-header{display:inline}}header>div.container a{color:#21242c}header>div.container a:visited{text-decoration:none}header>div.container .doc-burger-menu{z-index:2001}header>div.container .master-categories{font-family:Montserrat,sans-serif;font-size:15px;font-weight:500}header>div.container .master-categories .master-categories__dropdown{padding:16px 40px}header>div.container .master-categories .master-categories__dropdown>span+div{display:inline-grid;visibility:hidden;position:absolute;grid-template-columns:repeat(3,33%);z-index:2000;width:80%;left:10%;top:100%;opacity:0;background:#fff}header>div.container .master-categories .master-categories__dropdown>span+div>*{visibility:hidden;opacity:0}header>div.container .master-categories .master-categories__dropdown>span+div:before{content:"";position:absolute;height:2px;width:0;left:50%;border-radius:5px}header>div.container .master-categories .master-categories__dropdown ul a{font-size:16px;font-weight:400;line-height:18px}header>div.container .master-categories .master-categories__dropdown .card .card__body .card__body__title{font-size:16px}header>div.container .top-header .left-items,header>div.container .top-header .right-items{line-height:20px}header>div.container .left-items span{padding:0 4px}header>div.container .left-items span:first-child{padding-left:0}header>div.container .right-items .doc-btn{margin-right:16px}@media (max-width:374px){header>div.container .right-items .doc-btn{font-size:14px;padding:0 8px;margin-right:0}}header>div.container .right-items span{padding:0 12px;vertical-align:middle;font-size:22px}header>div.container .right-items span:last-child{padding-right:0}@media (min-width:1024px){body:not(.header-sticky) header>div.container .right-items{text-align:right}body:not(.header-sticky) header>div.container>div:first-child .left-items,body:not(.header-sticky) header>div.container>div:first-child .right-items{width:120px}body:not(.header-sticky) header>div.container .sub-header .left-items,body:not(.header-sticky) header>div.container .sub-header .right-items{width:108px}}header>div.container img.logo{width:140px}@media (min-width:1024px){header>div.container img.logo{width:auto}}@media (max-width:480px){header>div.container img.logo{margin-left:-30px}}@media (max-width:374px){header>div.container img.logo{width:120px}}header>div.container #doc-burger-menu-content{position:absolute;visibility:hidden;width:100%;height:-webkit-calc(28vh);height:calc(28vh);overflow-y:scroll;background:#fff;-webkit-transform:translateX(-100%);-ms-transform:translateX(-100%);-o-transform:translateX(-100%);transform:translateX(-100%)}header>div.container #doc-burger-menu-content .le-lab-logo{width:68px;margin-left:-6px}header>div.container #doc-burger-menu-content nav{position:relative;z-index:2000}header>div.container #doc-burger-menu-content nav div>span{font-family:Merriweather,serif;font-size:24px;font-weight:600;line-height:36px}header>div.container #doc-burger-menu-content nav div.category-underline+a{font-size:14px;font-weight:500;color:#5053ff;text-decoration:underline}header>div.container #doc-burger-menu-content nav div.category-underline+a+div a{font-weight:600}header>div.container #doc-burger-menu-content ul{border-bottom:1px solid #ebebeb;padding-bottom:8px;padding-right:16px}header>div.container #doc-burger-menu-content ul li{font-size:16px;border:none}@media (min-width:1024px){header>div.container #doc-burger-menu-content ul li.doc-burger-menu-first-print{font-weight:600}}header>div.container #doc-burger-menu-content .doc-burger-menu__sub{position:absolute;visibility:hidden;left:-100%;top:0;width:100%;height:100%;background:#fff;z-index:2001}header>div.container #doc-burger-menu-content .doc-burger-menu__sub div.category-underline>span{font-size:20px;line-height:30px;font-weight:500}header>div.container #doc-burger-menu-content .doc-burger-menu__sub div.category-underline:after{bottom:4px}header>div.container #doc-burger-menu-content .doc-burger-menu__sub>i{font-size:16px}header>div.container #doc-burger-menu-content .doc-burger-menu__sub>i+div{display:inline-block;margin-left:8px}@media (min-width:1024px){header>div.container #doc-burger-menu-content{display:none;width:900px;height:auto;overflow-y:initial;margin-top:-84px;border-radius:18px;-webkit-box-shadow:2px 4px 18px 1px rgba(0,0,0,.13);box-shadow:2px 4px 18px 1px rgba(0,0,0,.13)}header>div.container #doc-burger-menu-content nav{display:inline-block;padding:0 32px;margin-top:32px}header>div.container #doc-burger-menu-content nav .doc-burger-menu__sub{padding:0 24px;width:310px}header>div.container #doc-burger-menu-content nav .doc-burger-menu__sub.doc-burger-menu__sub--first-print{visibility:visible;border-left:1px solid #ebebeb;left:100%}header>div.container #doc-burger-menu-content nav .doc-burger-menu__sub div.category-underline,header>div.container #doc-burger-menu-content nav .doc-burger-menu__sub>i{display:none}header>div.container #doc-burger-menu-content nav .doc-burger-menu__sub div.category-underline+a{position:absolute;right:-294px;top:-32px;z-index:2002}header>div.container #doc-burger-menu-content nav .doc-burger-menu__sub div.category-underline+a+div{padding-top:0;padding-bottom:8px}header>div.container #doc-burger-menu-content nav li a:after{display:none}header>div.container #doc-burger-menu-content nav ul{border:none;margin:0}header>div.container #doc-burger-menu-content nav ul>div>ul{position:relative;height:90%}header>div.container #doc-burger-menu-content nav ul li{padding-bottom:8px;padding-top:8px}}html.no-js img.lazyload{display:none}#main-container{position:relative;background-color:#fff!important;padding-bottom:24px!important}@media (min-width:1024px){#main-container{padding:0 10px}}@media (min-width:1024px){#main-container #content-container{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}}@media (min-width:1024px){#main-container #content-container #right-col{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;-webkit-box-align:end;-webkit-align-items:flex-end;-ms-flex-align:end;align-items:flex-end}#main-container #content-container #right-col>div{width:300px;max-width:300px;-webkit-flex-basis:0;-ms-flex-preferred-size:0;flex-basis:0;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0}#main-container #content-container #right-col>div.doc-sticky-col-container{-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1}}#main-container .doc-sticky-col{will-change:min-height}#main-container .doc-sticky-col .doc-sticky-col__inner{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0);will-change:position,transform}#main-container .doc-block-ad{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}#main-container .doc-block-ad#banner_atf>div{background-color:transparent}#main-container .doc-block-ad#banner_atf{margin-left:-8px;margin-right:-8px}@media (min-width:1024px){#main-container .doc-block-ad#banner_atf{margin-left:auto;margin-right:auto}}footer>div.container>div a{display:inline-block;font-size:14px;font-weight:500;line-height:20px;color:#21242c;text-decoration:underline;padding-right:16px;padding-bottom:8px}footer div div{padding:8px;margin:8px}footer div div div{padding:8px}footer .doc-collapse{margin-left:0;padding-left:0}footer>div.container .doc-collapse .doc-collapse__content a{display:inline-block}ul.doc-list{margin:8px 0}ul.doc-list li{position:relative;display:block;padding:16px 0;margin:0;border-bottom:1px solid #ebebeb;font-size:18px;line-height:28px}ul.doc-list li:before{content:none}ul.doc-list li a{display:block}ul.doc-list li a:before{bottom:0;content:" ";left:0;position:absolute;right:0;top:0}ul.doc-list li:last-child{border-bottom:0}ul.doc-list.doc-list--arrow-right li a{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;padding-right:16px}ul.doc-list.doc-list--arrow-right li a:after{content:"\e905";position:absolute;right:0;font-family:doc-font;font-size:14px}.doc-burger-menu{display:block;position:relative;width:40px;height:40px}.doc-burger-menu span{display:inline-block;position:absolute;top:50%;left:50%;right:auto;bottom:auto;-webkit-transform:translateX(-50%) translateY(-50%);-ms-transform:translateX(-50%) translateY(-50%);-o-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);width:18px;height:2px;background-color:#5053ff}.doc-burger-menu span,.doc-burger-menu span:after,.doc-burger-menu span:before{border-radius:10px}.doc-burger-menu span:after,.doc-burger-menu span:before{content:"";width:130%;height:100%;position:absolute;background-color:#5053ff;right:-18%;top:8px}.doc-burger-menu span:after{top:-8px}.doc-menu-breadcrumb{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;font:normal 12px Montserrat,sans-serif;list-style-type:none;white-space:nowrap;overflow:auto;width:100%;margin:0 auto 16px auto}.doc-menu-breadcrumb li{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;margin-bottom:0}.doc-menu-breadcrumb li a{color:#21242c}@media screen and (min-width:1024px){.doc-menu-breadcrumb .collapse{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex}.doc-menu-breadcrumb>li:first-child{padding-left:0}}.doc-menu-breadcrumb .doc-collapse{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}.doc-menu-breadcrumb .doc-collapse .doc-collapse__btn--link{margin-left:8px;color:#21242c;line-height:10px}.doc-menu-breadcrumb .doc-collapse .doc-collapse__btn--link[aria-expanded=false] .doc-collapse__btn__close{display:none}@media screen and (min-width:1024px){.doc-menu-breadcrumb .doc-collapse .doc-collapse__btn--link{display:none}}.doc-user{display:grid;grid-template-columns:40px auto;grid-gap:8px;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;font:normal 400 14px/18px Montserrat,sans-serif}.doc-user>a.doc-user__img-wrapper{display:inline-block}.doc-user>a.doc-user__img-wrapper img{width:40px;height:40px}.doc-user>.doc-user__content strong{display:block;font-weight:600}.doc-user>.doc-user__content strong a{color:#21242c}.doc-user>.doc-user__content strong+span{display:inline-block;margin-top:4px}@media screen and (min-width:1024px){.doc-user{grid-template-columns:48px auto;font-size:16px;line-height:20px}.doc-user a.doc-user__img-wrapper img{width:48px;height:48px}}.doc-collapse .doc-collapse__content#sourcesContent{padding:0 8px;font-size:12px;line-height:24px}@media screen and (min-width:1024px){.doc-collapse .doc-collapse__content#sourcesContent{font-size:14px;line-height:28px}}.doc-content img{display:block;max-width:100%;height:auto;margin:auto}</style>
+
+            
+<script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "Organization",
+        "name" : "Doctissimo",
+        "url" : "https://www.doctissimo.fr",
+        "logo" : {
+            "@type": "ImageObject",
+            "url": "https://cdn.prod.docfr.doc-media.fr/bundles/app/images/refonte/logos/logo-doctissimo-270x270.png?1615378331181",
+            "width": 270,
+            "height": 270
+        },
+        "sameAs" : [
+            "https://www.facebook.com/doctissimo",
+            "https://www.pinterest.fr/doctissimo/",
+            "https://www.youtube.com/user/Doctissimo",
+            "https://www.instagram.com/doctissimo/",
+            "https://twitter.com/doctissimo"
+        ]
+    }
+</script>    
+    <!--300_atf,300_diapodynamic-->
+
+    <script type="text/javascript">
+    /** https://github.com/geraintluff/sha256 */
+var sha256=function a(b){function c(a,b){return a>>>b|a<<32-b}for(var d,e,f=Math.pow,g=f(2,32),h="length",i="",j=[],k=8*b[h],l=a.h=a.h||[],m=a.k=a.k||[],n=m[h],o={},p=2;64>n;p++)if(!o[p]){for(d=0;313>d;d+=p)o[d]=p;l[n]=f(p,.5)*g|0,m[n++]=f(p,1/3)*g|0}for(b+="\x80";b[h]%64-56;)b+="\x00";for(d=0;d<b[h];d++){if(e=b.charCodeAt(d),e>>8)return;j[d>>2]|=e<<(3-d)%4*8}for(j[j[h]]=k/g|0,j[j[h]]=k,e=0;e<j[h];){var q=j.slice(e,e+=16),r=l;for(l=l.slice(0,8),d=0;64>d;d++){var s=q[d-15],t=q[d-2],u=l[0],v=l[4],w=l[7]+(c(v,6)^c(v,11)^c(v,25))+(v&l[5]^~v&l[6])+m[d]+(q[d]=16>d?q[d]:q[d-16]+(c(s,7)^c(s,18)^s>>>3)+q[d-7]+(c(t,17)^c(t,19)^t>>>10)|0),x=(c(u,2)^c(u,13)^c(u,22))+(u&l[1]^u&l[2]^l[1]&l[2]);l=[w+x|0].concat(l),l[4]=l[4]+w|0}for(d=0;8>d;d++)l[d]=l[d]+r[d]|0}for(d=0;8>d;d++)for(e=3;e+1;e--){var y=l[d]>>8*e&255;i+=(16>y?0:"")+y.toString(16)}return i};
+    var device = '';
+var device_ua = ''; // just to not break something
+let userAgent = navigator.userAgent.toLowerCase();
+
+if (/(android|iphone|ipad|blackberry|symbian|symbianos|symbos|netfront|model-orange|javaplatform|iemobile|windows phone|samsung|htc|opera mobile|opera mobi|opera mini|presto|huawei|blazer|bolt|doris|fennec|gobrowser|iris|maemo browser|mib|cldc|minimo|semc-browser|skyfire|teashark|teleca|uzard|uzardweb|meego|nokia|bb10|playbook)/gi.test(userAgent)) {
+    if (((screen.width >= 480) && (screen.height >= 800)) || ((screen.width >= 800) && (screen.height >= 480)) || navigator.userAgent.match(/ipad/gi)) {
+        device = 'tablette';
+        device_ua = 'tablette';
+    } else {
+        device = 'mobile';
+        device_ua = 'mobile';
+    }
+} else {
+    device = 'desktop';
+    device_ua = 'desktop';
+}
+    //<![CDATA[
+var readCookie = readCookie ? readCookie : function (cname) {
+    var c, i,
+        name = cname.concat("="),
+        ca = document.cookie.split(';');
+
+    for (i = 0; i < ca.length; i += 1) {
+        c = ca[i];
+        while (c.charAt(0) === ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) === 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return null;
+};
+//]]>
+
+    var af_consentInternetTargeting = true;
+    var af_consentAdsTargeting = true;
+
+    if (typeof(window.__cmp) !== 'undefined' && typeof(window.__cmp.getCustomConsentBeforeLoad) !== 'undefined') {
+        var customCookieData = JSON.parse(window.__cmp.getCustomConsentBeforeLoad());
+
+        if (customCookieData !== null) {
+            if (typeof(customCookieData.internet_targeting) !== 'undefined') {
+                af_consentInternetTargeting = customCookieData.internet_targeting;
+            }
+
+            if (typeof(customCookieData.ads_targeting) !== 'undefined') {
+                af_consentAdsTargeting = customCookieData.ads_targeting;
+            }
+        }
+    }
+
+    const pageIds = {"animaux":"section_animals","beaute":"section_beauty","bebe":"section_baby","famille":"section_family","forme":"section_fit","grossesse":"section_pregnancy","medicaments":"section_drugs","medecines-douces":"section_altmed","mode":"section_fashion","nutrition":"section_nutrition","psychologie":"section_psycho","sante":"section_health","sexualite":"section_sexo","videos":"section_video","recettes":"section_food","home":"homepage","homepageprincipale":"homepage"};
+
+    var segment = window.afSession ? afSession.getSegment() : 0;
+
+    
+        
+        var othersData = {
+    "client": "none",
+    "cm_section": "nutrition",
+    "cm_rubrique": "diaporamas",
+    "section": "nutrition",
+    "subsection": "diaporamas",
+    "level1": "nutrition",
+    "level2": "diaporamas",
+    "level3": "desserts-preferes",
+    "level4": "",
+    "level_1": "Nutrition",
+    "level_2": "Diaporamas",
+    "level_3": "Les 10 desserts préférés des Français",
+    "contenttype": "slideshow",
+    "content_tpl": "slideshow",
+    "content_class": "slideshow",
+    "content_keywords": "dessert préféré, desserts préférés, desserts préférés des Français",
+    "seo_tag": "dessert préféré, desserts préférés, desserts préférés des Français",
+    "env": "prod",
+    "ops_tag": "none",
+    "url": "www.doctissimo.fr/nutrition/diaporamas/desserts-preferes",
+        "platform": "desktop",
+    "login": "0",
+    "segment": "1"
+}
+;
+        othersData.platform = device;
+        othersData.login = readCookie('CF_connected') ? 1 : 0;
+        othersData.segment = segment;
+
+    
+    var aufSectionDetected = (othersData.section === 'videos') ? othersData.subsection : othersData.section;
+
+    var sas_dfpPageId = (pageIds[aufSectionDetected]) ? pageIds[aufSectionDetected] : 'others';
+    var sas_formatIds = "banner_atf,300_atf,300_diapodynamic";
+    var sas_pageId = 1006319;
+    let sas_target = ';platform=' + device;
+    Object.keys(othersData).forEach(function(key){
+        if (othersData[key] !== '' && key !== 'content_keywords') sas_target += ';' + key + '=' + othersData[key];
+    });
+</script>
+
+    <script type="text/javascript">
+    var i = window,
+        e = document.documentElement,
+        b = document.body;
+
+    var segment = window.afSession ? afSession.getSegment() : 0;
+
+            
+        var unify_dataSlayer = [{
+            "page": {
+    "section": "nutrition",
+    "sectionId": 5343,
+    "subSection": "diaporamas",
+    "subSectionId": 127757,
+    "ID": 135716,
+    "nodeID": 134600,
+    "URLBO": "www.doctissimo.fr/nutrition/diaporamas/desserts-preferes",
+    "mainTag": "dessert préféré, desserts préférés, desserts préférés des Français",
+    "trackPageview": 1,
+    "level_1": "Nutrition",
+    "level_2": "Diaporamas",
+    "subSecLvl3": "desserts-preferes",
+    "level_3": "Les 10 desserts préférés des Français",
+    "subSecLvl4": "",
+    "level_4": "",
+    "subSecLvl5": "",
+    "level_5": ""
+},
+            "content": {
+    "type": "slideshow",
+    "author": "La rédaction de Doctissimo",
+    "date": "20170403",
+    "modificationDate": "20170403",
+    "label": "Les 10 desserts préférés des Français",
+    "medReview": "Dr Jesus Cardenas",
+    "wordsCount": "",
+    "dynInfeedCount": ""
+},
+            "site": {
+    "platform": "doctissimo",
+    "lang": "fr",
+    "sid": 51,
+    "environment": "prod"
+},
+            "user": {
+    "id": "",
+    "dom": "",
+    "device": "",
+    "screenResolution": "",
+    "referer": "",
+    "segment": "",
+    "adblocker": "",
+    "isLoggedIn": "",
+    "registrationDate": "",
+    "firstPost": "",
+    "newsletterOptin": "",
+    "registrationType": "",
+    "activity": "",
+    "lastPost": ""
+},
+            "ops": {
+    "id": "none",
+    "name": "none",
+    "brand": "none"
+},
+            "utm": {
+    "campaign": "",
+    "medium": "",
+    "source": ""
+},
+        }];
+
+        window.unify_dataSlayer[0].page.version = '';
+        window.unify_dataSlayer[0].page.section = aufSectionDetected;
+        window.unify_dataSlayer[0].user.id = readCookie('CF_user_id') ? "doctissimo-" + sha256('UNIFY-DMP-' + readCookie('CF_user_id')) : '';
+        window.unify_dataSlayer[0].user.dom = "";
+        window.unify_dataSlayer[0].user.device = device;
+        window.unify_dataSlayer[0].user.screenResolution = (i.innerWidth || e.clientWidth || b.clientWidth || 0) + 'x' + (i.innerHeight || e.clientHeight || b.clientHeight || 0);
+        window.unify_dataSlayer[0].user.referer = document.referrer;
+        window.unify_dataSlayer[0].user.segment = segment;
+        window.unify_dataSlayer[0].user.adblocker = "N/A";
+        window.unify_dataSlayer[0].user.isLoggedIn = readCookie('CF_connected') ? 1 : 0;
+        if (window.unify_dataSlayer[0].utm.medium !== 'Google News') { // don't override UTM values if they’re already set for GNews
+            window.unify_dataSlayer[0].utm.campaign = window.afSession ? afSession.getUtmCampaign() : '';
+            window.unify_dataSlayer[0].utm.medium = window.afSession ? afSession.getUtmMedium() : '';
+            window.unify_dataSlayer[0].utm.source = window.afSession ? afSession.getUtmSource() : '';
+        }
+
+        var CM_RUBRIQUE = othersData.cm_rubrique;
+        var CM_SECTION1 = othersData.cm_section;
+
+    </script>
+
+    <script>
+    var pegasusConf = {
+        params: {
+            site: 'doctissimo_fr',
+            traffic: 'organic',
+            country: 'FR',
+            keywords: sas_target,
+            section: sas_dfpPageId,
+            contenttype: window.unify_dataSlayer[0].content.type,
+        }
+    }
+</script>
+
+<script type="text/javascript" src="https://pegasus.unifygroup.com/lib/pegasus.min.js" async></script>
+
+    
+        <script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+    var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+    j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','unify_dataSlayer','GTM-PGLVR9V');
+
+    </script>
+
+    <script defer src="https://cdn3.prod.docfr.doc-media.fr/bundles/app/js/jquery.min.js?1615378331181"></script>
+
+<script>
+    var trafficing_exclu_300mtf = false;
+
+    var trafficing_exclu_all = (
+        window.unify_dataSlayer[0].page.subSection === 'régimes'                                                // 2021-05-02
+        || window.unify_dataSlayer[0].page.subSecLvl5 === 'lesrumdenuitaurtinolpur-revitaliftlaserdeloralparis' // 2021-05-04
+        || window.unify_dataSlayer[0].page.subSecLvl5 === 'soinjouranti-agerevitaliftfillerdeloralparis'        // 2021-05-08
+        || window.unify_dataSlayer[0].page.subSecLvl3 === 'lethermomtreaxillaireconnecte-torm'                  // 2021-05-16
+        || window.unify_dataSlayer[0].page.subSection === 'vitamine'                                           // 2021-06-12
+    );
+
+    var trafficing_exclu_full = (
+        window.unify_dataSlayer[0].page.level_1==='Equipe'
+        ||window.unify_dataSlayer[0].page.subSecLvl3==='test-qi'
+        ||window.unify_dataSlayer[0].page.subSecLvl4==='panier-100-pourcent-sante-bien-choisir-aide-auditives' // 2021-04-30
+    );
+
+    // Remove dyninfeed for pages in exclu pub
+    window.addEventListener('DOMContentLoaded', function() {
+        if (trafficing_exclu_all || trafficing_exclu_full) {
+            document.querySelectorAll('.doc-block-pub-dyn-infeed').forEach(function(e) {
+                e.remove();
+            });
+        }
+        if (trafficing_exclu_full && document.querySelector('#taboola-below-article-thumbnails')) {
+            document.querySelector('#taboola-below-article-thumbnails').remove();
+        }
+    });
+</script>
+
+
+
+<script>
+    document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/,'');
+</script>
+
+        
+    <link href="https://cdn3.prod.docfr.doc-media.fr/bundles/app/css/refonte-slideshow.min.css?1615378331181" rel="preload" media="screen" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link href="https://cdn3.prod.docfr.doc-media.fr/bundles/app/css/refonte-slideshow.min.css?1615378331181" rel="stylesheet" media="screen" /></noscript>
+
+    </head>
+<body class="doc-rubric-nutrition doc-type-slideshow">
+            <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGLVR9V" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+                    <header class="">
+    <div class="container">
+        <div class="top-header d-flex justify-content-between align-items-center">
+            <div class="left-items">
+                <span class="light-header"><a href="https://fr-fr.facebook.com/doctissimo/" target="_blank" rel="noopener noreferrer"><i class="doc-icon-facebook"></i></a></span>
+                <span class="light-header"><a href=" https://www.pinterest.fr/doctissimo/" target="_blank" rel="noopener noreferrer"><i class="doc-icon-pinterest"></i></a></span>
+                <span class="light-header"><a href="https://www.instagram.com/doctissimo/?hl=fr" target="_blank" rel="noopener noreferrer"><i class="doc-icon-instatagram"></i></a></span>
+                <span class="light-header"><a href="https://www.youtube.com/user/Doctissimo" target="_blank" rel="noopener noreferrer"><i class="doc-icon-youtube"></i></a></span>
+                <span class="light-header"><a href="https://twitter.com/doctissimo" target="_blank" rel="noopener noreferrer"><i class="doc-icon-twitter-circle"></i></a></span>
+                <span class="doc-burger-menu" data-url="https://www.doctissimo.fr/header/menu/content"><span></span></span>
+            </div>
+            <div class="header-logo"><a href="https://www.doctissimo.fr" title="Doctissimo : Santé et bien être avec Doctissimo"><img class="logo header-logo" alt="Doctissimo : Santé et bien être avec Doctissimo" src="https://cdn3.prod.docfr.doc-media.fr/bundles/app/images/refonte/logos/doctissimo.svg?1615378331181"></a></div>
+            <div class="header-right-item right-items">
+                <a href="https://forum.doctissimo.fr/" class="doc-btn doc-btn--outline-primary">Forums</a>
+                <span><i id="header-icon-search" class="doc-icon-search"></i></span>
+                <div class="search-wrapper">
+                    <form class="d-flex" action="https://www.doctissimo.fr/recherche" method="get">
+                        <input id="doc-search-text" name="search[query]" type="text" autocomplete="off" placeholder="Rechercher" aria-label="Rechercher">
+                        <input type="submit" title="Recherchez sur Doctissimo" value="Go" tabindex="2">
+                        <i class="doc-icon-close color-blue-50"></i>
+                    </form>
+                </div>
+                <span class="light-header">
+                    <a href="https://forum.doctissimo.fr/inscription.html" title="Club Doctissimo"><i class="doc-icon-user"></i></a>
+                </span>
+            </div>
+        </div>
+        <div class="sub-header d-flex justify-content-between align-items-center">
+            <div class="left-items"><span class="doc-burger-menu" data-url="https://www.doctissimo.fr/header/menu/content"><span></span></span></div>
+            <nav class="master-categories d-flex justify-content-between align-items-center">
+                                    <div class="master-categories__dropdown">
+                        <span class="sante" href="#">Santé</span>
+                    </div>
+                                    <div class="master-categories__dropdown">
+                        <span class="famille" href="#">Famille</span>
+                    </div>
+                                    <div class="master-categories__dropdown">
+                        <span class="bienetre" href="#">Bien-Être</span>
+                    </div>
+                            </nav>
+            <div class="right-items"><a href="https://forum.doctissimo.fr/" class="doc-btn doc-btn--outline-primary">Forums</a></div>
+        </div>
+        <div class="coronavirus-banner d-flex">
+            <a onclick="unify_ua_trackEvent('covid-banner', 'click', 'covid-banner-click')" href="https://www.doctissimo.fr/sante/epidemie/coronavirus-live-actualites"></a>
+            <div class="banner-item banner-item--left"><span>DIRECT<span class="hidden-xs"> Coronavirus</span></span></div>
+            <ul class="banner-item banner-item--middle">
+                <li><a onclick="unify_ua_trackEvent('Publisher', 'CovidBanner_Click', 'COVID-19');" href="https://www.doctissimo.fr/sante/epidemie/coronavirus-chinois">COVID-19</a></li>
+                <li><a onclick="unify_ua_trackEvent('Publisher', 'CovidBanner_Click', 'Vaccin_Pfizer');"href="https://www.doctissimo.fr/sante/epidemie/coronavirus-chinois/pfizer-biontech-vaccin-coronavirus-covid">Vaccin Pfizer</a></li>
+                <li><a onclick="unify_ua_trackEvent('Publisher', 'CovidBanner_Click', 'Symptomes_Covid');"href="https://www.doctissimo.fr/sante/epidemie/coronavirus-chinois/symptomes-coronavirus-que-faire">Symptômes Covid</a></li>
+                <li><a onclick="unify_ua_trackEvent('Publisher', 'CovidBanner_Click', 'Vaccins_Covid');"href="https://www.doctissimo.fr/sante/epidemie/coronavirus-chinois/coronavirus-vaccins-covid-19-pfizer-moderna-astrazeneca-sanofi-russie-chine">Vaccins Covid</a></li>
+                <li><a onclick="unify_ua_trackEvent('Publisher', 'CovidBanner_Click', 'Actualite_Covid');" href="https://www.doctissimo.fr/sante/epidemie/coronavirus-live-actualites">Actualité Covid</a></li>
+            </ul>
+        </div>
+
+        <div id="doc-burger-menu-content" class="doc-px-2 doc-py-3">
+            
+ <nav>
+            <div class="sante category-underline"><span>Santé</span></div>
+        <ul class="doc-list">
+                            <li class="hidden-xs"><a role="button">Coronavirus</a></li>
+                <li class="first-level hidden-lg hidden-sm hidden-md row">
+                    <a href="/sante/epidemie/coronavirus-live-actualites" class="pull-left col-md-6" role="button">Coronavirus</a>
+                    <span class="col-md-6 pull-right text-right">
+                        <i class="doc-icon-arrow-right"></i>
+                    </span>
+                </li>
+                <div class="doc-burger-menu__sub">
+                    <i class="doc-icon-arrow-left"></i><div class="category-underline"><span>Coronavirus</span></div>
+                    <a href="#" class="pull-right"></a>
+                    <div class="hidden-xs doc-py-3"><a href="/sante/epidemie/coronavirus-live-actualites" title="Actualités Coronavirus">Actualités coronavirus en direct</a></div>                    <ul class="doc-list doc-list--arrow-right">
+                        <li><a href="https://www.doctissimo.fr/sante/epidemie/coronavirus-chinois" title="Tout savoir sur le coronavirus">Tout savoir sur le coronavirus</a></li>
+                        <li><a href="https://www.doctissimo.fr/forme/garder-forme-confinement-fitness-nutrition" title="Covid 19 : gardez la forme">Covid 19 : gardez la forme</a></li>
+                        <li><a href="https://www.doctissimo.fr/psychologie/zen-confinement" title="Prenez soin de vous">Prenez soin de vous</a></li>
+                        <li><a href="https://www.doctissimo.fr/famille/confinement-famille" title="En famille">En famille</a></li>
+                        <li><a href="https://www.doctissimo.fr/sante/epidemie/coronavirus-chinois/coronavirus-vaccins-covid-19-pfizer-moderna-astrazeneca-sanofi-russie-chine" title="Vaccin anti-Covid 19">Vaccin anti-Covid 19</a></li>
+                    </ul>
+                </div>
+                                        <li class="hidden-xs doc-burger-menu-first-print"><a role="button">Santé</a></li>
+                <li class="hidden-lg hidden-sm hidden-md first-level row doc-burger-menu-first-print">
+                    <a href="https://www.doctissimo.fr/html/sante/sante.htm" class="pull-left col-md-6" role="button">Santé</a>
+                    <span class="col-md-6 pull-right">
+                        <i class="doc-icon-arrow-right"></i>
+                    </span>
+                </li>
+                <div class="doc-burger-menu__sub doc-burger-menu__sub--first-print">
+                    <i class="doc-icon-arrow-left"></i><div class="sante category-underline"><span>Santé</span></div>
+                    <a href="https://forum.doctissimo.fr/" class="pull-right">Forums Santé</a>
+                    <div class="hidden-xs doc-py-3"><a href="https://www.doctissimo.fr/html/sante/sante.htm" title="Santé">Santé</a></div>
+                    <ul class="doc-list doc-list--arrow-right">
+                                                                                                </ul>
+                </div>
+                            <li class="hidden-xs "><a role="button">Médicaments</a></li>
+                <li class="hidden-lg hidden-sm hidden-md first-level row ">
+                    <a href="https://www.doctissimo.fr/html/medicaments/medicaments.htm" class="pull-left col-md-6" role="button">Médicaments</a>
+                    <span class="col-md-6 pull-right">
+                        <i class="doc-icon-arrow-right"></i>
+                    </span>
+                </li>
+                <div class="doc-burger-menu__sub ">
+                    <i class="doc-icon-arrow-left"></i><div class="sante category-underline"><span>Santé</span></div>
+                    <a href="https://forum.doctissimo.fr/medicaments/liste_categorie.htm" class="pull-right">Forums Médicaments</a>
+                    <div class="hidden-xs doc-py-3"><a href="https://www.doctissimo.fr/html/medicaments/medicaments.htm" title="Médicaments">Médicaments</a></div>
+                    <ul class="doc-list doc-list--arrow-right">
+                                                                                                </ul>
+                </div>
+                            <li class="hidden-xs "><a role="button">Médecines douces</a></li>
+                <li class="hidden-lg hidden-sm hidden-md first-level row ">
+                    <a href="https://www.doctissimo.fr/medecines-douces" class="pull-left col-md-6" role="button">Médecines douces</a>
+                    <span class="col-md-6 pull-right">
+                        <i class="doc-icon-arrow-right"></i>
+                    </span>
+                </li>
+                <div class="doc-burger-menu__sub ">
+                    <i class="doc-icon-arrow-left"></i><div class="sante category-underline"><span>Santé</span></div>
+                    <a href="https://forum.doctissimo.fr/sante/medecines-douces/liste_sujet-1.htm" class="pull-right">Forums Médecines douces</a>
+                    <div class="hidden-xs doc-py-3"><a href="https://www.doctissimo.fr/medecines-douces" title="Médecines douces">Médecines douces</a></div>
+                    <ul class="doc-list doc-list--arrow-right">
+                                                                                                </ul>
+                </div>
+                    </ul>
+            <div class="famille category-underline"><span>Famille</span></div>
+        <ul class="doc-list">
+                                        <li class="hidden-xs "><a role="button">Grossesse</a></li>
+                <li class="hidden-lg hidden-sm hidden-md first-level row ">
+                    <a href="https://www.doctissimo.fr/html/grossesse/grossesse.htm" class="pull-left col-md-6" role="button">Grossesse</a>
+                    <span class="col-md-6 pull-right">
+                        <i class="doc-icon-arrow-right"></i>
+                    </span>
+                </li>
+                <div class="doc-burger-menu__sub ">
+                    <i class="doc-icon-arrow-left"></i><div class="famille category-underline"><span>Famille</span></div>
+                    <a href="https://forum.doctissimo.fr/grossesse-bebe/liste_categorie.htm" class="pull-right">Forums Grossesse</a>
+                    <div class="hidden-xs doc-py-3"><a href="https://www.doctissimo.fr/html/grossesse/grossesse.htm" title="Grossesse">Grossesse</a></div>
+                    <ul class="doc-list doc-list--arrow-right">
+                                                                                                </ul>
+                </div>
+                            <li class="hidden-xs "><a role="button">Bébé</a></li>
+                <li class="hidden-lg hidden-sm hidden-md first-level row ">
+                    <a href="https://www.doctissimo.fr/html/bebe/bebe.htm" class="pull-left col-md-6" role="button">Bébé</a>
+                    <span class="col-md-6 pull-right">
+                        <i class="doc-icon-arrow-right"></i>
+                    </span>
+                </li>
+                <div class="doc-burger-menu__sub ">
+                    <i class="doc-icon-arrow-left"></i><div class="famille category-underline"><span>Famille</span></div>
+                    <a href="https://forum.doctissimo.fr/grossesse-bebe/liste_categorie.htm" class="pull-right">Forums Bébé</a>
+                    <div class="hidden-xs doc-py-3"><a href="https://www.doctissimo.fr/html/bebe/bebe.htm" title="Bébé">Bébé</a></div>
+                    <ul class="doc-list doc-list--arrow-right">
+                                                                                                </ul>
+                </div>
+                            <li class="hidden-xs "><a role="button">Famille</a></li>
+                <li class="hidden-lg hidden-sm hidden-md first-level row ">
+                    <a href="https://www.doctissimo.fr/html/famille/famille.htm" class="pull-left col-md-6" role="button">Famille</a>
+                    <span class="col-md-6 pull-right">
+                        <i class="doc-icon-arrow-right"></i>
+                    </span>
+                </li>
+                <div class="doc-burger-menu__sub ">
+                    <i class="doc-icon-arrow-left"></i><div class="famille category-underline"><span>Famille</span></div>
+                    <a href="https://forum.doctissimo.fr/famille/liste_categorie.htm" class="pull-right">Forums Famille</a>
+                    <div class="hidden-xs doc-py-3"><a href="https://www.doctissimo.fr/html/famille/famille.htm" title="Famille">Famille</a></div>
+                    <ul class="doc-list doc-list--arrow-right">
+                                                                                                </ul>
+                </div>
+                            <li class="hidden-xs "><a role="button">Animaux</a></li>
+                <li class="hidden-lg hidden-sm hidden-md first-level row ">
+                    <a href="https://www.doctissimo.fr/animaux" class="pull-left col-md-6" role="button">Animaux</a>
+                    <span class="col-md-6 pull-right">
+                        <i class="doc-icon-arrow-right"></i>
+                    </span>
+                </li>
+                <div class="doc-burger-menu__sub ">
+                    <i class="doc-icon-arrow-left"></i><div class="famille category-underline"><span>Famille</span></div>
+                    <a href="https://forum.doctissimo.fr/animaux/liste_categorie.htm" class="pull-right">Forums Animaux</a>
+                    <div class="hidden-xs doc-py-3"><a href="https://www.doctissimo.fr/animaux" title="Animaux">Animaux</a></div>
+                    <ul class="doc-list doc-list--arrow-right">
+                                                                                                </ul>
+                </div>
+                    </ul>
+            <div class="bienetre category-underline"><span>Bien-Être</span></div>
+        <ul class="doc-list">
+                                        <li class="hidden-xs "><a role="button">Beauté</a></li>
+                <li class="hidden-lg hidden-sm hidden-md first-level row ">
+                    <a href="https://www.doctissimo.fr/html/beaute/beaute.htm" class="pull-left col-md-6" role="button">Beauté</a>
+                    <span class="col-md-6 pull-right">
+                        <i class="doc-icon-arrow-right"></i>
+                    </span>
+                </li>
+                <div class="doc-burger-menu__sub ">
+                    <i class="doc-icon-arrow-left"></i><div class="bienetre category-underline"><span>Bien-Être</span></div>
+                    <a href="https://forum.doctissimo.fr/forme-beaute/liste_categorie.htm" class="pull-right">Forums Beauté</a>
+                    <div class="hidden-xs doc-py-3"><a href="https://www.doctissimo.fr/html/beaute/beaute.htm" title="Beauté">Beauté</a></div>
+                    <ul class="doc-list doc-list--arrow-right">
+                                                                                                </ul>
+                </div>
+                            <li class="hidden-xs "><a role="button">Forme</a></li>
+                <li class="hidden-lg hidden-sm hidden-md first-level row ">
+                    <a href="https://www.doctissimo.fr/html/forme/forme.htm" class="pull-left col-md-6" role="button">Forme</a>
+                    <span class="col-md-6 pull-right">
+                        <i class="doc-icon-arrow-right"></i>
+                    </span>
+                </li>
+                <div class="doc-burger-menu__sub ">
+                    <i class="doc-icon-arrow-left"></i><div class="bienetre category-underline"><span>Bien-Être</span></div>
+                    <a href="https://forum.doctissimo.fr/forme-sport/liste_categorie.htm" class="pull-right">Forums Forme</a>
+                    <div class="hidden-xs doc-py-3"><a href="https://www.doctissimo.fr/html/forme/forme.htm" title="Forme">Forme</a></div>
+                    <ul class="doc-list doc-list--arrow-right">
+                                                                                                </ul>
+                </div>
+                            <li class="hidden-xs "><a role="button">Nutrition</a></li>
+                <li class="hidden-lg hidden-sm hidden-md first-level row ">
+                    <a href="https://www.doctissimo.fr/html/nutrition/nutrition.htm" class="pull-left col-md-6" role="button">Nutrition</a>
+                    <span class="col-md-6 pull-right">
+                        <i class="doc-icon-arrow-right"></i>
+                    </span>
+                </li>
+                <div class="doc-burger-menu__sub ">
+                    <i class="doc-icon-arrow-left"></i><div class="bienetre category-underline"><span>Bien-Être</span></div>
+                    <a href="https://forum.doctissimo.fr/nutrition/liste_categorie.htm" class="pull-right">Forums Nutrition</a>
+                    <div class="hidden-xs doc-py-3"><a href="https://www.doctissimo.fr/html/nutrition/nutrition.htm" title="Nutrition">Nutrition</a></div>
+                    <ul class="doc-list doc-list--arrow-right">
+                                                                                                </ul>
+                </div>
+                            <li class="hidden-xs "><a role="button">Psycho</a></li>
+                <li class="hidden-lg hidden-sm hidden-md first-level row ">
+                    <a href="https://www.doctissimo.fr/html/psychologie/psychologie.htm" class="pull-left col-md-6" role="button">Psycho</a>
+                    <span class="col-md-6 pull-right">
+                        <i class="doc-icon-arrow-right"></i>
+                    </span>
+                </li>
+                <div class="doc-burger-menu__sub ">
+                    <i class="doc-icon-arrow-left"></i><div class="bienetre category-underline"><span>Bien-Être</span></div>
+                    <a href="https://forum.doctissimo.fr/psychologie/liste_categorie.htm" class="pull-right">Forums Psycho</a>
+                    <div class="hidden-xs doc-py-3"><a href="https://www.doctissimo.fr/html/psychologie/psychologie.htm" title="Psycho">Psycho</a></div>
+                    <ul class="doc-list doc-list--arrow-right">
+                                                                                                </ul>
+                </div>
+                            <li class="hidden-xs "><a role="button">Sexualité</a></li>
+                <li class="hidden-lg hidden-sm hidden-md first-level row ">
+                    <a href="https://www.doctissimo.fr/html/sexualite/sexualite.htm" class="pull-left col-md-6" role="button">Sexualité</a>
+                    <span class="col-md-6 pull-right">
+                        <i class="doc-icon-arrow-right"></i>
+                    </span>
+                </li>
+                <div class="doc-burger-menu__sub ">
+                    <i class="doc-icon-arrow-left"></i><div class="bienetre category-underline"><span>Bien-Être</span></div>
+                    <a href="https://forum.doctissimo.fr/doctissimo/liste_categorie.htm" class="pull-right">Forums Sexualité</a>
+                    <div class="hidden-xs doc-py-3"><a href="https://www.doctissimo.fr/html/sexualite/sexualite.htm" title="Sexualité">Sexualité</a></div>
+                    <ul class="doc-list doc-list--arrow-right">
+                                                                                                </ul>
+                </div>
+                    </ul>
+    
+    <div><span>Autres</span></div>
+    <ul class="doc-list doc-list-parts">
+        <li class="hidden-xs"><a role="button">Actualités</a></li>
+        <li class="first-level hidden-lg hidden-sm hidden-md row">
+            <a href="https://www.doctissimo.fr/news" class="pull-left col-md-6" role="button">Actualités</a>
+            <span class="col-md-6 pull-right">
+                <i class="doc-icon-arrow-right"></i>
+            </span>
+        </li>
+        <div class="doc-burger-menu__sub">
+            <i class="doc-icon-arrow-left"></i><div class="category-underline"><span>Actualités</span></div>
+            <a href="#" class="pull-right"></a>
+            <div class="doc-py-3 hidden-xs"><a href="https://www.doctissimo.fr/news" title="Actualités">Actualités</a></div>
+            <ul class="doc-list doc-list--arrow-right">
+                <li><a href="https://www.doctissimo.fr/sante/news" title="Actualités Santé">Santé</a></li>
+                <li><a href="https://www.doctissimo.fr/medicaments/news" title="Actualités Médicaments">Médicaments</a></li>
+                <li><a href="https://www.doctissimo.fr/grossesse/news" title="Actualités Grossesse & bébé">Grossesse & bébé</a></li>
+                <li><a href="https://www.doctissimo.fr/nutrition/news" title="Actualités Nutrition">Nutrition</a></li>
+                <li><a href="https://www.doctissimo.fr/beaute/news" title="Actualités Beauté">Beauté</a></li>
+                <li><a href="https://www.doctissimo.fr/psychologie/news" title="Actualités Psycho">Psycho</a></li>
+                <li><a href="https://www.doctissimo.fr/sexualite/news" title="Actualités Sexualité">Sexualité</a></li>
+                <li><a href="https://www.doctissimo.fr/forme/news" title="Actualités Forme">Forme</a></li>
+                <li><a href="https://www.doctissimo.fr/famille/news" title="Actualités Famille">Famille</a></li>
+            </ul>
+        </div>
+        <li class="first-level row">
+            <a class="pull-left col-md-6" href="https://videos.doctissimo.fr">Vidéos</a>
+        </li>
+        <li class="first-level row">
+            <a class="pull-left col-md-6" href="https://www.doctissimo.fr/tests">Tests</a>
+        </li>
+    </ul>
+
+    <div><span>Espace membre</span></div>
+    <ul class="doc-list">
+        <li class="first-level row">
+            <a class="pull-left col-md-6" href="https://forum.doctissimo.fr/login.html">Se connecter</a>
+        </li>
+        <li class="first-level row">
+            <a class="pull-left col-md-6" href="https://club.doctissimo.fr/">Club Doctissimo</a>
+        </li>
+        <li class="first-level row">
+            <a class="pull-left col-md-6" href="https://www.doctissimo.fr/lelab">
+                <img class="le-lab-logo" src="https://cdn2.prod.docfr.doc-media.fr/bundles/app/images/refonte/doc-le-lab-by-doctissimo-small.png?1615378331181" alt="Le Lab" />
+            </a>
+        </li>
+    </ul>
+</nav>
+        </div>
+    </div>
+</header>
+
+<script>
+    if (typeof device !== 'undefined' && device === 'mobile') {
+        document.getElementsByTagName("header").className += " sticky";
+        document.body.className += " header-sticky";
+    }
+</script>
+
+        
+                    <div class="row">
+                <div class="col-md-12">
+                    <div id="banner_atf">
+                                                <div id="banner_atf__container">
+                            <script type="text/javascript">
+        if (!trafficing_exclu_full) {
+            var ads_element_banner_atf = document.createElement('div');
+            ads_element_banner_atf.setAttribute('data-ad', 'banner_atf');
+            document.getElementById('banner_atf__container').appendChild(ads_element_banner_atf);
+        }
+    </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        <div id="main-container" class="container">
+                                        <div class="row">
+                    <div class="col-md-12">
+                        <ol class="doc-menu-breadcrumb doc-pl-1 doc-pl-md-0" itemscope itemtype="http://schema.org/BreadcrumbList">
+                                                            <li class="doc-pl-1" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+        <a itemprop="item" href="https://www.doctissimo.fr" title="Accueil">
+        <span itemprop="name">Accueil</span>
+        <meta itemprop="position" content="1"/>
+    </a>
+</li>
+                                                        <li class="doc-pl-1" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <span class="doc-mr-1"> / </span>
+        <a itemprop="item" href="https://www.doctissimo.fr/html/nutrition/nutrition.htm" title="Nutrition">
+        <span itemprop="name">Nutrition</span>
+        <meta itemprop="position" content="2"/>
+    </a>
+</li>
+            <div class="doc-collapse">
+                <div class="doc-collapse__content collapse" id="sourcesContents" aria-expanded="false" style="height: 0px;">
+                    
+            <li class="doc-pl-1" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <span class="doc-mr-1"> / </span>
+        <a itemprop="item" href="https://www.doctissimo.fr/nutrition/diaporamas" title="Diaporamas - Nutrition">
+        <span itemprop="name">Diaporamas - Nutrition</span>
+        <meta itemprop="position" content="3"/>
+    </a>
+</li>
+                                                                </div>
+                                <span class="doc-collapse__btn doc-collapse__btn--link collapsed" role="button" data-toggle="collapse" href="#sourcesContents" aria-expanded="false" aria-controls="sourcesContents">
+                <span class="doc-collapse__btn__open">...</span>
+                <span class="doc-collapse__btn__close">...</span>
+            </span>
+                </div>
+                        </ol>
+                    </div>
+                </div>
+            
+    
+            
+                                            <div id="content-container" class="row">
+                                            <div class="col-md-8">
+                                <div class="doc-content doc-px-2 doc-px-md-0">
+
+                                
+                        
+                    <h1>Les 10 desserts préférés des Français</h1>
+        
+                    <div class="doc-my-3">
+                                            <div class="doc-user">
+                    <a class="doc-user__img-wrapper" href="https://www.doctissimo.fr/equipe/auteurs/la-redaction" title="La rédaction de Doctissimo">
+        
+                    <img
+                src="https://resize1.prod.docfr.doc-media.fr/r/50,50,center-middle,ffffff,smartcrop/img/var/doctissimo/storage/images/fr/www/equipe/auteurs/la-redaction/584221-6-fre-FR/la-redaction.jpg"
+                alt="La rédaction de Doctissimo"
+                class="rounded-circle"
+            />
+        
+                    </a>
+        
+        <div class="doc-user__content">
+            <strong>
+                                    <a href="https://www.doctissimo.fr/equipe/auteurs/la-redaction" title="La rédaction de Doctissimo">
+                
+                    La rédaction de Doctissimo
+
+                                    </a>
+                            </strong>
+
+                    </div>
+    </div>
+
+
+                            </div>
+        
+        
+        
+        <div class="doc-slideshow" data-opts='{"dataUrl": "https://www.doctissimo.fr/webservice/slideshow/134600"}'>
+                        <img
+                src="https://resize.prod.docfr.doc-media.fr/rcrop/480,363,center-middle/img/var/doctissimo/storage/images/fr/www/nutrition/diaporamas/desserts-preferes/2189765-1-fre-FR/Les-10-desserts-preferes-des-Francais.jpg"
+                alt="Les 10 desserts préférés des Français"
+                class="doc-img-responsive-100 rounded-lg"
+            />
+            
+                            <h2>Les 10 desserts préférés des Français</h2>
+            
+            
+            <p>Vous êtes plutôt chocolat ou vanille ? Plutôt crème brûlée ou dessert plus léger ? Une chose est sûre, vous êtes gourmand(e) et aimez finir vos repas par une note sucrée. Votre coup de cœur est-il dans le top 10 des desserts préférés des Français ? Il ne vous reste qu'à vérifier. </p><p>Attention : les images qui suivent risquent de vous donner envie d'un dessert...</p><p>Créé en octobre 2015</p><p><strong>Source : </strong>Communiqué de presse de l'
+
+<a href="http://www.lequilibreadugout.fr/" target="_blank">association Menu</a> (Mouvement pour l'Equilibre Nutritionnel), 2 octobre 2015 : <em>Les desserts préférés des Français, une enquête Harris Interactive pour Menu</em></p><p>
+<em>Nos dossiers pour aller plus loin</em><br/>
+
+
+<a href="http://recettes.doctissimo.fr/desserts/" target="_self">Recettes de desserts</a><br/>
+
+<a href="https://www.doctissimo.fr/html/nutrition/aliments/sucre.htm" target="_self">Les produits sucrés</a></p><p>
+<em>Discutez-en sur nos forums</em><br/>
+
+
+<a href="http://forum.doctissimo.fr/nutrition/Desserts/liste_sujet-1.htm" target="_self">Forum Recettes de dessert</a><br/>
+
+<a href="http://forum.doctissimo.fr/nutrition/alimentation-sante/liste_sujet-1.htm" target="_self">Forum Alimentation et santé</a></p><p>Les desserts préférés des Français, une enquête Harris pour MENU</p><p>Le chocolat plébiscité par les Français Les desserts préférés des Français, une enquête Harris pour MENULe chocolat plébiscité par les Français !</p>
+
+
+
+
+
+                            <hr class="doc-hr-100"/>
+                <p><strong>Sommaire du diaporama</strong></p>
+                <ul>
+                                            <li>
+                            <a
+                                href="https://www.doctissimo.fr/nutrition/diaporamas/desserts-preferes/tarte-aux-fraises"
+                                title="N°10 : la tarte aux fraises"
+                            >
+                                N°10 : la tarte aux fraises
+                            </a>
+                        </li>
+                                            <li>
+                            <a
+                                href="https://www.doctissimo.fr/nutrition/diaporamas/desserts-preferes/tarte-aux-pommes"
+                                title="N°9 : la tarte aux pommes"
+                            >
+                                N°9 : la tarte aux pommes
+                            </a>
+                        </li>
+                                            <li>
+                            <a
+                                href="https://www.doctissimo.fr/nutrition/diaporamas/desserts-preferes/salade-de-fruits"
+                                title="N°8 : la salade de fruits"
+                            >
+                                N°8 : la salade de fruits
+                            </a>
+                        </li>
+                                            <li>
+                            <a
+                                href="https://www.doctissimo.fr/nutrition/diaporamas/desserts-preferes/ile-flottante"
+                                title="N°7 : l&#039;île flottante"
+                            >
+                                N°7 : l&#039;île flottante
+                            </a>
+                        </li>
+                                            <li>
+                            <a
+                                href="https://www.doctissimo.fr/nutrition/diaporamas/desserts-preferes/creme-brulee"
+                                title="N°6 : la crème brûlée"
+                            >
+                                N°6 : la crème brûlée
+                            </a>
+                        </li>
+                                            <li>
+                            <a
+                                href="https://www.doctissimo.fr/nutrition/diaporamas/desserts-preferes/crepes"
+                                title="N°5 : Les crêpes"
+                            >
+                                N°5 : Les crêpes
+                            </a>
+                        </li>
+                                            <li>
+                            <a
+                                href="https://www.doctissimo.fr/nutrition/diaporamas/desserts-preferes/tarte-au-citron-meringuee"
+                                title="N°4 : la tarte au citron meringuée"
+                            >
+                                N°4 : la tarte au citron meringuée
+                            </a>
+                        </li>
+                                            <li>
+                            <a
+                                href="https://www.doctissimo.fr/nutrition/diaporamas/desserts-preferes/tiramisu"
+                                title="N°3 : le tiramisu"
+                            >
+                                N°3 : le tiramisu
+                            </a>
+                        </li>
+                                            <li>
+                            <a
+                                href="https://www.doctissimo.fr/nutrition/diaporamas/desserts-preferes/fondant-au-chocolat"
+                                title="N°2 : le fondant au chocolat"
+                            >
+                                N°2 : le fondant au chocolat
+                            </a>
+                        </li>
+                                            <li>
+                            <a
+                                href="https://www.doctissimo.fr/nutrition/diaporamas/desserts-preferes/mousse-au-chocolat"
+                                title="N°1 : la mousse au chocolat"
+                            >
+                                N°1 : la mousse au chocolat
+                            </a>
+                        </li>
+                                    </ul>
+                    </div>
+
+        <script type="application/ld+json">
+        {
+            "@context": "http://schema.org/",
+            "@type": "ImageGallery",
+            "name": "Les\u002010\u0020desserts\u0020pr\u00E9f\u00E9r\u00E9s\u0020des\u0020Fran\u00E7ais",
+            "description": "Vous\u0020\u00EAtes\u0020plut\u00F4t\u0020chocolat\u0020ou\u0020vanille\u0020\u003F\u0020Plut\u00F4t\u0020cr\u00E8me\u0020br\u00FBl\u00E9e\u0020ou\u0020dessert\u0020plus\u0020l\u00E9ger\u0020\u003F\u0020Une\u0020chose\u0020est\u0020s\u00FBre,\u0020vous\u0020\u00EAtes\u0020gourmand\u0028e\u0029\u0020et\u0020aimez\u0020finir\u0020vos\u0020repas\u0020par\u0020une\u0020note\u0020sucr\u00E9e.\u0020Votre\u0020coup\u0020de\u0020c\u0153ur\u0020est\u002Dil\u0020dans\u0020le\u0020top\u002010\u0020des\u0020desserts\u0020pr\u00E9f\u00E9r\u00E9s\u0020des\u0020Fran\u00E7ais\u0020\u003F\u0020Il\u0020ne\u0020vous\u0020reste\u0020qu\u0027\u00E0\u0020v\u00E9rifier.\u00A0Attention\u0020\u003A\u0020les\u0020images\u0020qui\u0020suivent\u0020risquent\u0020de\u0020vous\u0020donner\u0020envie\u0020d\u0027un\u0020dessert...Cr\u00E9\u00E9\u0020en\u0020octobre\u00202015Source\u0020\u003A\u0020Communiqu\u00E9\u0020de\u0020presse\u0020de\u0020l\u0027\u0020\u0020association\u0020Menu\u0020\u0028Mouvement\u0020pour\u0020l\u0027Equilibre\u0020Nutritionnel\u0029,\u00202\u0020octobre\u00202015\u0020\u003A\u0020Les\u0020desserts\u0020pr\u00E9f\u00E9r\u00E9s\u0020des\u0020Fran\u00E7ais,\u0020une\u0020enqu\u00EAte\u0020Harris\u0020Interactive\u0020pour\u0020Menu\u0020Nos\u0020dossiers\u0020pour\u0020aller\u0020plus\u0020loin\u0020\u0020\u0020Recettes\u0020de\u0020desserts\u0020\u0020Les\u0020produits\u0020sucr\u00E9s\u0020Discutez\u002Den\u0020sur\u0020nos\u0020forums\u0020\u0020\u0020Forum\u0020Recettes\u0020de\u0020dessert\u0020\u0020Forum\u0020Alimentation\u0020et\u0020sant\u00E9Les\u0020desserts\u0020pr\u00E9f\u00E9r\u00E9s\u0020des\u0020Fran\u00E7ais,\u0020une\u0020enqu\u00EAte\u0020Harris\u0020pour\u0020MENULe\u0020chocolat\u0020pl\u00E9biscit\u00E9\u0020par\u0020les\u0020Fran\u00E7ais\u00A0Les\u0020desserts\u0020pr\u00E9f\u00E9r\u00E9s\u0020des\u0020Fran\u00E7ais,\u0020une\u0020enqu\u00EAte\u0020Harris\u0020pour\u0020MENULe\u0020chocolat\u0020pl\u00E9biscit\u00E9\u0020par\u0020les\u0020Fran\u00E7ais\u0020\u0021\u0020\u0020\u0020\u0020",
+            "associatedMedia": [
+                            {
+                    "@type": "ImageObject",
+                    "image": [
+                        "https://resize3.prod.docfr.doc-media.fr/rcrop/1200,678,center-middle/img/var/doctissimo/storage/images/fr/www/nutrition/diaporamas/desserts-preferes/tarte-aux-fraises/2189819-1-fre-FR/N-10-la-tarte-aux-fraises.jpg",
+                        "https://resize3.prod.docfr.doc-media.fr/rcrop/1200,902,center-middle/img/var/doctissimo/storage/images/fr/www/nutrition/diaporamas/desserts-preferes/tarte-aux-fraises/2189819-1-fre-FR/N-10-la-tarte-aux-fraises.jpg",
+                        "https://resize3.prod.docfr.doc-media.fr/s/1200/img/var/doctissimo/storage/images/fr/www/nutrition/diaporamas/desserts-preferes/tarte-aux-fraises/2189819-1-fre-FR/N-10-la-tarte-aux-fraises.jpg"
+                    ],
+                    "caption": "N\u00B010\u0020\u003A\u0020la\u0020tarte\u0020aux\u0020fraises",
+                    "description": "La\u0020tarte\u0020aux\u0020fraises\u0020est\u0020un\u0020dessert\u0020de\u0020saison.\u0020C\u0027est\u0020peut\u002D\u00EAtre\u0020la\u0020raison\u0020pour\u0020laquelle\u0020elle\u0020n\u0027est\u0020que\u002010\u00E8me\u0020du\u0020classement.\u0020Mais\u0020quand\u0020ces\u0020petites\u0020baies\u0020rouges\u0020reviennent\u0020sur\u0020les\u0020\u00E9tals,\u0020nous\u0020sommes\u0020tous\u0020ravis\u0020de\u0020retrouver\u0020notre\u0020tarte\u0020aux\u0020fraises\u0020ch\u00E9rie\u0020\u0021\u0020\u0020Voir\u0020notre\u0020recette\u0020de\u0020tarte\u0020aux\u0020fraises\u0020en\u0020vid\u00E9o\u0020\u0020\u0020\u0020",
+                    "copyrightHolder": ""
+                    },                             {
+                    "@type": "ImageObject",
+                    "image": [
+                        "https://resize.prod.docfr.doc-media.fr/rcrop/1200,678,center-middle/img/var/doctissimo/storage/images/fr/www/nutrition/diaporamas/desserts-preferes/tarte-aux-pommes/2189855-1-fre-FR/N-9-la-tarte-aux-pommes.jpg",
+                        "https://resize.prod.docfr.doc-media.fr/rcrop/1200,902,center-middle/img/var/doctissimo/storage/images/fr/www/nutrition/diaporamas/desserts-preferes/tarte-aux-pommes/2189855-1-fre-FR/N-9-la-tarte-aux-pommes.jpg",
+                        "https://resize.prod.docfr.doc-media.fr/s/1200/img/var/doctissimo/storage/images/fr/www/nutrition/diaporamas/desserts-preferes/tarte-aux-pommes/2189855-1-fre-FR/N-9-la-tarte-aux-pommes.jpg"
+                    ],
+                    "caption": "N\u00B09\u0020\u003A\u0020la\u0020tarte\u0020aux\u0020pommes",
+                    "description": "Un\u0020grand\u0020classique\u0020\u003A\u0020\u00A0la\u0020tarte\u0020aux\u0020pommes\u0020est\u0020le\u00209\u00E8me\u0020dessert\u0020favori\u0020des\u0020Fran\u00E7ais.\u0020Nous\u0020avons\u0020tous\u0020une\u0020recette\u0020transmise\u0020par\u0020notre\u0020grand\u002Dm\u00E8re.\u0020Et\u0020\u00E7a\u0020nous\u0020r\u00E9chauffe\u0020le\u0020c\u0153ur\u0020chaque\u0020fois\u0020qu\u0027elle\u0020embaume\u0020la\u0020maison.\u0020Et\u0020puis\u0020si\u0020la\u0020flemme\u0020nous\u0020prend,\u0020nous\u0020sommes\u0020quasi\u0020s\u00FBrs\u0020de\u0020la\u0020retrouver\u0020sur\u0020la\u0020carte\u0020des\u0020restaurants.\u0020Classique\u0020ou\u0020tatin\u0020\u003F\u0020Le\u0020choix\u0020est\u0020difficile...\u0020\u0020Voir\u0020nos\u0020recettes\u0020de\u0020tartes\u0020sucr\u00E9es\u0020\u0020\u0020\u0020",
+                    "copyrightHolder": ""
+                    },                             {
+                    "@type": "ImageObject",
+                    "image": [
+                        "https://resize1.prod.docfr.doc-media.fr/rcrop/1200,678,center-middle/img/var/doctissimo/storage/images/fr/www/nutrition/diaporamas/desserts-preferes/salade-de-fruits/2189891-1-fre-FR/N-8-la-salade-de-fruits.jpg",
+                        "https://resize1.prod.docfr.doc-media.fr/rcrop/1200,902,center-middle/img/var/doctissimo/storage/images/fr/www/nutrition/diaporamas/desserts-preferes/salade-de-fruits/2189891-1-fre-FR/N-8-la-salade-de-fruits.jpg",
+                        "https://resize1.prod.docfr.doc-media.fr/s/1200/img/var/doctissimo/storage/images/fr/www/nutrition/diaporamas/desserts-preferes/salade-de-fruits/2189891-1-fre-FR/N-8-la-salade-de-fruits.jpg"
+                    ],
+                    "caption": "N\u00B08\u0020\u003A\u0020la\u0020salade\u0020de\u0020fruits",
+                    "description": "Elle\u0020tombe\u0020\u00E0\u0020pic\u0020apr\u00E8s\u0020un\u0020repas\u0020un\u0020peu\u0020lourd.\u0020La\u0020salade\u0020de\u0020fruit\u0020rafra\u00EEchit\u0020tout\u0020en\u0020r\u00E9pondant\u0020aux\u0020envies\u0020de\u0020sucr\u00E9.\u0020En\u0020plus,\u0020elle\u0020peut\u0020varier\u0020selon\u0020les\u0020saisons.\u0020C\u0027est\u0020pour\u0020\u00E7a\u0020que\u0020vous\u0020l\u0027aimez\u0020autant,\u0020avouez\u002Dle\u0020\u0021\u0020\u0020Voir\u0020nos\u0020recettes\u0020de\u0020desserts\u0020aux\u0020fruits\u0020\u0020\u0020\u0020",
+                    "copyrightHolder": ""
+                    },                             {
+                    "@type": "ImageObject",
+                    "image": [
+                        "https://resize1.prod.docfr.doc-media.fr/rcrop/1200,678,center-middle/img/var/doctissimo/storage/images/fr/www/nutrition/diaporamas/desserts-preferes/ile-flottante/2189927-1-fre-FR/N-7-l-ile-flottante.jpg",
+                        "https://resize1.prod.docfr.doc-media.fr/rcrop/1200,902,center-middle/img/var/doctissimo/storage/images/fr/www/nutrition/diaporamas/desserts-preferes/ile-flottante/2189927-1-fre-FR/N-7-l-ile-flottante.jpg",
+                        "https://resize1.prod.docfr.doc-media.fr/s/1200/img/var/doctissimo/storage/images/fr/www/nutrition/diaporamas/desserts-preferes/ile-flottante/2189927-1-fre-FR/N-7-l-ile-flottante.jpg"
+                    ],
+                    "caption": "N\u00B07\u0020\u003A\u0020l\u0027\u00EEle\u0020flottante",
+                    "description": "Une\u0020petite\u0020\u00EEle\u0020de\u0020blanc\u0020d\u0027\u0153uf\u0020en\u0020neige,\u0020sur\u0020une\u0020mer\u0020de\u0020cr\u00E8me\u0020anglaise...\u0020\u00C7a\u0020y\u0020est,\u0020vous\u0020avez\u0020d\u00E9j\u00E0\u0020l\u0027odeur\u0020de\u0020la\u0020vanille\u0020qui\u0020vous\u0020monte\u0020au\u0020nez\u0020\u003F\u0020C\u0027est\u0020l\u0027effet\u0020de\u0020l\u0027\u00EEle\u0020flottante.\u0020N\u0027essayez\u0020pas\u0020de\u0020r\u00E9sister...\u0020\u0020Voir\u0020notre\u0020recette\u0020d\u0027\u00EEle\u0020flottante\u0020en\u0020vid\u00E9o\u0020\u0020\u0020\u0020",
+                    "copyrightHolder": ""
+                    },                             {
+                    "@type": "ImageObject",
+                    "image": [
+                        "https://resize1.prod.docfr.doc-media.fr/rcrop/1200,678,center-middle/img/var/doctissimo/storage/images/fr/www/nutrition/diaporamas/desserts-preferes/creme-brulee/2189963-1-fre-FR/N-6-la-creme-brulee.jpg",
+                        "https://resize1.prod.docfr.doc-media.fr/rcrop/1200,902,center-middle/img/var/doctissimo/storage/images/fr/www/nutrition/diaporamas/desserts-preferes/creme-brulee/2189963-1-fre-FR/N-6-la-creme-brulee.jpg",
+                        "https://resize1.prod.docfr.doc-media.fr/s/1200/img/var/doctissimo/storage/images/fr/www/nutrition/diaporamas/desserts-preferes/creme-brulee/2189963-1-fre-FR/N-6-la-creme-brulee.jpg"
+                    ],
+                    "caption": "N\u00B06\u0020\u003A\u0020la\u0020cr\u00E8me\u0020br\u00FBl\u00E9e",
+                    "description": "Est\u002Dce\u0020son\u0020sucre\u0020caram\u00E9lis\u00E9\u0020qui\u0020fait\u0020autant\u0020craquer\u0020les\u0020Fran\u00E7ais\u0020\u003F\u0020Ou\u0020sa\u0020touche\u0020vanill\u00E9e\u0020\u003F\u0020En\u0020tout\u0020cas,\u0020\u00E7a\u0020fonctionne\u0020puisque\u0020la\u0020cr\u00E8me\u0020br\u00FBl\u00E9e\u0020est\u0020votre\u00206\u00E8me\u0020dessert\u0020pr\u00E9f\u00E9r\u00E9.\u0020Pour\u0020varier\u0020les\u0020plaisirs,\u0020testez\u0020les\u0020variantes\u0020au\u0020\u0020\u0020chocolat,\u0020au\u0020caramel,\u0020sans\u0020oeufs...\u0020\u0020Voir\u0020notre\u0020recette\u0020de\u0020cr\u00E8me\u0020br\u00FBl\u00E9e\u0020\u00E0\u0020la\u0020vanille\u0020\u0020\u0020\u0020",
+                    "copyrightHolder": ""
+                    },                             {
+                    "@type": "ImageObject",
+                    "image": [
+                        "https://resize2.prod.docfr.doc-media.fr/rcrop/1200,678,center-middle/img/var/doctissimo/storage/images/fr/www/nutrition/diaporamas/desserts-preferes/crepes/2189999-1-fre-FR/N-5-Les-crepes.jpg",
+                        "https://resize2.prod.docfr.doc-media.fr/rcrop/1200,902,center-middle/img/var/doctissimo/storage/images/fr/www/nutrition/diaporamas/desserts-preferes/crepes/2189999-1-fre-FR/N-5-Les-crepes.jpg",
+                        "https://resize2.prod.docfr.doc-media.fr/s/1200/img/var/doctissimo/storage/images/fr/www/nutrition/diaporamas/desserts-preferes/crepes/2189999-1-fre-FR/N-5-Les-crepes.jpg"
+                    ],
+                    "caption": "N\u00B05\u0020\u003A\u0020Les\u0020cr\u00EApes",
+                    "description": "Au\u0020sucre\u0020ou\u0020\u00E0\u0020la\u0020confiture\u0020pour\u0020les\u0020puristes.\u0020Au\u0020caramel\u0020beurre\u0020sal\u00E9\u0020pour\u0020les\u0020traditionnels.\u0020\u00C0\u00A0la\u0020p\u00E2te\u0020\u00E0\u0020tartiner\u0020pour\u0020les\u0020gourmands.\u0020Et\u0020tant\u0020d\u0027autres\u0020possibilit\u00E9s\u0020\u0021\u0020C\u0027est\u0020ce\u0020que\u0020les\u0020Fran\u00E7ais\u0020aiment\u0020avec\u0020les\u0020cr\u00EApes,\u0020elles\u0020varient\u0020selon\u0020les\u0020envies.\u0020Pas\u0020surprenant\u0020qu\u0027elles\u0020arrivent\u0020en\u00205\u00E8me\u0020positition\u0020de\u0020vos\u0020desserts\u0020favoris.\u0020Et\u0020de\u0020vos\u0020go\u00FBters\u0020aussi\u0020\u003F\u0020\u0020Voir\u0020nos\u0020recettes\u0020de\u0020cr\u00EApes\u0020\u0020\u0020\u0020",
+                    "copyrightHolder": ""
+                    },                             {
+                    "@type": "ImageObject",
+                    "image": [
+                        "https://resize1.prod.docfr.doc-media.fr/rcrop/1200,678,center-middle/img/var/doctissimo/storage/images/fr/www/nutrition/diaporamas/desserts-preferes/tarte-au-citron-meringuee/2190035-1-fre-FR/N-4-la-tarte-au-citron-meringuee.jpg",
+                        "https://resize1.prod.docfr.doc-media.fr/rcrop/1200,902,center-middle/img/var/doctissimo/storage/images/fr/www/nutrition/diaporamas/desserts-preferes/tarte-au-citron-meringuee/2190035-1-fre-FR/N-4-la-tarte-au-citron-meringuee.jpg",
+                        "https://resize1.prod.docfr.doc-media.fr/s/1200/img/var/doctissimo/storage/images/fr/www/nutrition/diaporamas/desserts-preferes/tarte-au-citron-meringuee/2190035-1-fre-FR/N-4-la-tarte-au-citron-meringuee.jpg"
+                    ],
+                    "caption": "N\u00B04\u0020\u003A\u0020la\u0020tarte\u0020au\u0020citron\u0020meringu\u00E9e",
+                    "description": "Un\u0020autre\u0020grand\u0020classique\u0020de\u0020la\u0020cuisine\u0020familiale,\u0020fruit\u00E9\u0020cette\u0020fois\u002Dci.\u0020Par\u0020habitude\u0020ou\u0020par\u0020paresse,\u0020vous\u0020avez\u0020plut\u00F4t\u0020tendance\u0020\u00E0\u0020l\u2019acheter\u0020toute\u0020pr\u00EAte\u00A0\u003F\u0020Tentez\u0020une\u0020fois\u0020de\u0020la\u0020faire\u0020vous\u002Dm\u00EAme\u0020et\u0020vous\u0020verrez\u0020la\u0020diff\u00E9rence.\u0020C\u2019est\u0020plus\u0020facile\u0020\u00E0\u0020r\u00E9aliser\u0020que\u0020vous\u0020ne\u0020l\u2019imaginez\u00A0\u0021\u0020\u0020Voir\u0020notre\u0020recette\u0020de\u0020tarte\u0020au\u0020citron\u0020meringu\u00E9e\u0020en\u0020vid\u00E9o\u0020\u0020\u0020\u0020",
+                    "copyrightHolder": ""
+                    },                             {
+                    "@type": "ImageObject",
+                    "image": [
+                        "https://resize2.prod.docfr.doc-media.fr/rcrop/1200,678,center-middle/img/var/doctissimo/storage/images/fr/www/nutrition/diaporamas/desserts-preferes/tiramisu/2190071-1-fre-FR/N-3-le-tiramisu.jpg",
+                        "https://resize2.prod.docfr.doc-media.fr/rcrop/1200,902,center-middle/img/var/doctissimo/storage/images/fr/www/nutrition/diaporamas/desserts-preferes/tiramisu/2190071-1-fre-FR/N-3-le-tiramisu.jpg",
+                        "https://resize2.prod.docfr.doc-media.fr/s/1200/img/var/doctissimo/storage/images/fr/www/nutrition/diaporamas/desserts-preferes/tiramisu/2190071-1-fre-FR/N-3-le-tiramisu.jpg"
+                    ],
+                    "caption": "N\u00B03\u0020\u003A\u0020le\u0020tiramisu",
+                    "description": "Une\u0020petite\u0020touche\u0020italienne\u0020en\u0020troisi\u00E8me\u0020place\u0020du\u0020classement.\u0020Le\u0020tiramisu\u0020est\u0020le\u0020dessert\u0020pr\u00E9f\u00E9r\u00E9\u0020d\u2019un\u0020Fran\u00E7ais\u0020sur\u00204.\u0020Rien\u0020que\u0020\u00E7a\u00A0\u0021\u0020Pas\u0020si\u0020difficile\u0020\u00E0\u0020faire\u0020\u00E0\u0020la\u0020maison,\u0020\u00E0\u0020condition\u0020d\u2019avoir\u0020une\u0020bonne\u0020recette.\u0020\u0020Voir\u0020nos\u0020recettes\u0020de\u0020tiramisu\u0020\u0020\u0020\u0020",
+                    "copyrightHolder": ""
+                    },                             {
+                    "@type": "ImageObject",
+                    "image": [
+                        "https://resize1.prod.docfr.doc-media.fr/rcrop/1200,678,center-middle/img/var/doctissimo/storage/images/fr/www/nutrition/diaporamas/desserts-preferes/fondant-au-chocolat/2190107-1-fre-FR/N-2-le-fondant-au-chocolat.jpg",
+                        "https://resize1.prod.docfr.doc-media.fr/rcrop/1200,902,center-middle/img/var/doctissimo/storage/images/fr/www/nutrition/diaporamas/desserts-preferes/fondant-au-chocolat/2190107-1-fre-FR/N-2-le-fondant-au-chocolat.jpg",
+                        "https://resize1.prod.docfr.doc-media.fr/s/1200/img/var/doctissimo/storage/images/fr/www/nutrition/diaporamas/desserts-preferes/fondant-au-chocolat/2190107-1-fre-FR/N-2-le-fondant-au-chocolat.jpg"
+                    ],
+                    "caption": "N\u00B02\u0020\u003A\u0020le\u0020fondant\u0020au\u0020chocolat",
+                    "description": "Ce\u0020n\u2019est\u0020pas\u0020vraiment\u0020une\u0020surprise,\u0020vous\u0020adorez\u0020le\u0020chocolat\u0020\u0028nous\u0020aussi\u00A0\u0021\u0029.\u0020Le\u0020fondant\u0020au\u0020chocolat\u0020est\u0020le\u0020second\u0020dessert\u0020pr\u00E9f\u00E9r\u00E9\u0020des\u0020petits\u0020et\u0020des\u0020grands,\u0020plus\u0020ou\u0020moins\u0020coulant\u0020selon\u0020les\u0020go\u00FBts.\u0020Miam\u00A0\u0021\u0020\u0020Voir\u0020nos\u0020recettes\u0020de\u0020g\u00E2teaux\u0020et\u0020fondants\u0020au\u0020chocolat\u0020\u0020\u0020\u0020",
+                    "copyrightHolder": ""
+                    },                             {
+                    "@type": "ImageObject",
+                    "image": [
+                        "https://resize2.prod.docfr.doc-media.fr/rcrop/1200,678,center-middle/img/var/doctissimo/storage/images/fr/www/nutrition/diaporamas/desserts-preferes/mousse-au-chocolat/2190143-1-fre-FR/N-1-la-mousse-au-chocolat.jpg",
+                        "https://resize2.prod.docfr.doc-media.fr/rcrop/1200,902,center-middle/img/var/doctissimo/storage/images/fr/www/nutrition/diaporamas/desserts-preferes/mousse-au-chocolat/2190143-1-fre-FR/N-1-la-mousse-au-chocolat.jpg",
+                        "https://resize2.prod.docfr.doc-media.fr/s/1200/img/var/doctissimo/storage/images/fr/www/nutrition/diaporamas/desserts-preferes/mousse-au-chocolat/2190143-1-fre-FR/N-1-la-mousse-au-chocolat.jpg"
+                    ],
+                    "caption": "N\u00B01\u0020\u003A\u0020la\u0020mousse\u0020au\u0020chocolat",
+                    "description": "Encore\u0020du\u0020chocolat\u0020\u0021\u0020Hommes\u0020et\u0020femmes,\u0020jeunes\u0020et\u0020moins\u0020jeunes\u0020ont\u0020pl\u00E9biscit\u00E9\u0020la\u0020mousse\u0020au\u0020chocolat,\u0020qui\u0020arrive\u0020sur\u0020la\u0020premi\u00E8re\u0020marche\u0020du\u0020podium\u0020des\u0020desserts\u0020pr\u00E9f\u00E9r\u00E9s\u0020des\u0020Fran\u00E7ais,\u0020avec\u002026\u0020\u0025\u0020des\u0020voix.\u0020\u00C7a\u0020tombe\u0020bien,\u0020il\u0020est\u0020si\u0020facile\u0020de\u0020r\u00E9aliser\u0020une\u0020d\u00E9licieuse\u0020mousse\u0020au\u0020chocolat\u0020maison.\u0020\u00C0\u00A0vous\u0020de\u0020jouer\u00A0\u0021\u0020\u0020Voir\u0020notre\u0020recette\u0020de\u0020mousse\u0020au\u0020chocolat\u0020en\u0020vid\u00E9o\u0020\u0020\u0020\u0020",
+                    "copyrightHolder": ""
+                    }                        ]
+        }
+        </script>
+    </div>
+
+    <div class="doc-px-2 doc-px-md-0">
+        <hr class="doc-hr-100"/>
+
+        <div class="doc-text-xs doc-my-1">
+                            Mis à jour le 03 avril 2017
+                    </div>
+
+                    <div class="doc-grid-2-auto doc-my-2">
+                <span class="h3 doc-m-0">Révision médicale :</span>
+                <span class="text-right doc-text-xs">03/04/2017</span>
+            </div>
+
+            <div class="doc-my-3">
+                                            <div class="doc-user">
+                    <a class="doc-user__img-wrapper" href="https://www.doctissimo.fr/equipe/les-experts-de-doctissimo/jesus-cardenas" title="Dr Jesus Cardenas">
+        
+                    <img
+                src="https://resize1.prod.docfr.doc-media.fr/r/50,50,center-middle,ffffff,smartcrop/img/var/doctissimo/storage/images/fr/www/equipe/les-experts-de-doctissimo/jesus-cardenas/4935326-9-fre-FR/jesus-cardenas.jpg"
+                alt="Dr Jesus Cardenas"
+                class="rounded-circle"
+            />
+        
+                    </a>
+        
+        <div class="doc-user__content">
+            <strong>
+                                    <a href="https://www.doctissimo.fr/equipe/les-experts-de-doctissimo/jesus-cardenas" title="Dr Jesus Cardenas">
+                
+                    Dr Jesus Cardenas
+
+                                    </a>
+                            </strong>
+
+                            <span>Allergologue</span>
+                    </div>
+    </div>
+
+
+                            </div>
+
+            <script type="application/ld+json">
+                    {
+                        "@context": "http://schema.org",
+                        "@type": "MedicalWebPage",
+                        "headline": "Les 10 desserts préférés des Français",
+                        "alternateName": "Les 10 desserts préférés des Français",
+                        "lastReviewed": "2017-04-03T14:19:45+02:00",
+                        "reviewedBy": [
+                                                            {
+                                    "@type": "Person",
+                                    "name": "Dr Jesus Cardenas",
+                                    "url": "https://www.doctissimo.fr/equipe/les-experts-de-doctissimo/jesus-cardenas"
+                                }                                                    ]
+                    }
+                </script>
+        
+        
+        
+
+<div class="doc-menu-social doc-my-3 doc-ml-neg-3 doc-mr-neg-3 doc-ml-neg-md-0 doc-mr-neg-md-0">
+    <span class="doc-text-sm">Partager sur :</span>
+    <div class="doc-menu-social__share text-right">
+        <a class="doc-social-btn" href="https://www.facebook.com/dialog/share?app_id=290600267704798&display=popup&href=https://www.doctissimo.fr/nutrition/diaporamas/desserts-preferes" target="_blank" data-toggle="tooltip">
+            <i class="doc-icon-facebook-circle"></i>
+        </a>
+        <a class="doc-social-btn" href="https://twitter.com/intent/tweet?text=Les%2010%20desserts%20pr%C3%A9f%C3%A9r%C3%A9s%20des%20Fran%C3%A7ais&url=https://www.doctissimo.fr/nutrition/diaporamas/desserts-preferes" target="_blank" data-toggle="tooltip">
+            <i class="doc-icon-twitter-circle"></i>
+        </a>
+        <a class="doc-social-btn whatsapp" role="button" target="_blank" data-toggle="tooltip" data-text="https://www.doctissimo.fr/nutrition/diaporamas/desserts-preferes">
+            <i class="doc-icon-whatsapp-circle"><span class="path1"></span><span class="path2"></span></i>
+        </a>
+        <a class="doc-social-btn" href="//www.pinterest.com/pin/create/button/?url=https://www.doctissimo.fr/nutrition/diaporamas/desserts-preferes&media=https://resize.prod.docfr.doc-media.fr/rcrop/720,420,center-middle/img/var/doctissimo/storage/images/fr/www/nutrition/diaporamas/desserts-preferes/7985270-1-fre-FR/Les-10-desserts-preferes-des-Francais1.png&description=Les%2010%20desserts%20pr%C3%A9f%C3%A9r%C3%A9s%20des%20Fran%C3%A7ais" target="_blank" data-toggle="tooltip">
+            <i class="doc-icon-pinterest-circle"></i>
+        </a>
+
+            </div>
+</div>
+        <div class="doc-my-5 doc-my-md-6">
+            
+
+            <div class="doc-recommendations doc-recommendations--bottom">
+                    <div class="doc-slider doc-slider--js doc-slider--js-3">
+                <div class="doc-slider__head">
+                    <div class="title title--sm">À voir aussi</div>
+                    <div class="controls">
+                        <span class="controls__prev"><i class="doc-icon-arrow-left"></i></span>
+                        <span class="controls__next"><i class="doc-icon-arrow-right"></i></span>
+                    </div>
+                </div>
+                <div class="doc-slider__container">
+                    
+                                                    <div class="doc-slider__container__item">
+                                            
+        
+    <div class="card ">
+        <div class="card__img-wrapper image-overlay">
+            <img
+                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://resize.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/img/var/doctissimo/storage/images/fr/www/nutrition/sante-dans-l-assiette/boissons-energisantes-naturelles/8376813-1-fre-FR/8-boissons-energisantes-naturelles-pour-un-coup-de-boost.jpg"
+                                alt="8 boissons énergisantes naturelles pour un coup de boost"
+                class="doc-img-responsive-100 rounded-lg lazyload"
+            />
+                            <noscript>
+                    <img src="https://resize.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/img/var/doctissimo/storage/images/fr/www/nutrition/sante-dans-l-assiette/boissons-energisantes-naturelles/8376813-1-fre-FR/8-boissons-energisantes-naturelles-pour-un-coup-de-boost.jpg" alt="8 boissons énergisantes naturelles pour un coup de boost" class="doc-img-responsive-100 rounded-lg" />
+                </noscript>
+            
+                            <span class="image-overlay__overlay">
+                    <span></span>
+                    <i class="doc-icon-album"></i>
+                </span>
+                    </div>
+        <div class="card__body">
+            <div>
+                                    <span>Nutrition</span>
+                
+                                    <span>|</span>
+                
+                                    <span class="color-grey-medium">Diaporama</span>
+                
+                                    <span class="strip bg-color-category-bienetre"></span>
+                            </div>
+                            <h5 class="card__body__title">
+                        <a href="https://www.doctissimo.fr/nutrition/sante-dans-l-assiette/boissons-energisantes-naturelles"
+               title="8 boissons énergisantes naturelles pour un coup de boost" >8 boissons énergisantes naturelles pour un coup de boost</a>
+                            </h5>
+                                </div>
+    </div>
+
+                            </div>
+                    
+                                                    <div class="doc-slider__container__item">
+                                            
+        
+    <div class="card ">
+        <div class="card__img-wrapper image-overlay">
+            <img
+                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://resize2.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/img/var/doctissimo/storage/images/fr/www/nutrition/securite-alimentaire/aliments-a-ne-pas-manger-crus/8375113-1-fre-FR/Les-aliments-a-ne-pas-manger-crus.jpg"
+                                alt="Les aliments à ne pas manger crus"
+                class="doc-img-responsive-100 rounded-lg lazyload"
+            />
+                            <noscript>
+                    <img src="https://resize2.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/img/var/doctissimo/storage/images/fr/www/nutrition/securite-alimentaire/aliments-a-ne-pas-manger-crus/8375113-1-fre-FR/Les-aliments-a-ne-pas-manger-crus.jpg" alt="Les aliments à ne pas manger crus" class="doc-img-responsive-100 rounded-lg" />
+                </noscript>
+            
+                            <span class="image-overlay__overlay">
+                    <span></span>
+                    <i class="doc-icon-album"></i>
+                </span>
+                    </div>
+        <div class="card__body">
+            <div>
+                                    <span>Nutrition</span>
+                
+                                    <span>|</span>
+                
+                                    <span class="color-grey-medium">Diaporama</span>
+                
+                                    <span class="strip bg-color-category-bienetre"></span>
+                            </div>
+                            <h5 class="card__body__title">
+                        <a href="https://www.doctissimo.fr/nutrition/securite-alimentaire/aliments-a-ne-pas-manger-crus"
+               title="Les aliments à ne pas manger crus" >Les aliments à ne pas manger crus</a>
+                            </h5>
+                                </div>
+    </div>
+
+                            </div>
+                    
+                                                    <div class="doc-slider__container__item">
+                                            
+        
+    <div class="card ">
+        <div class="card__img-wrapper image-overlay">
+            <img
+                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://resize.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/img/var/doctissimo/storage/images/fr/www/nutrition/sante-dans-l-assiette/alimentation-laxative/8351059-1-fre-FR/10-aliments-laxatifs.jpg"
+                                alt="10 aliments laxatifs"
+                class="doc-img-responsive-100 rounded-lg lazyload"
+            />
+                            <noscript>
+                    <img src="https://resize.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/img/var/doctissimo/storage/images/fr/www/nutrition/sante-dans-l-assiette/alimentation-laxative/8351059-1-fre-FR/10-aliments-laxatifs.jpg" alt="10 aliments laxatifs" class="doc-img-responsive-100 rounded-lg" />
+                </noscript>
+            
+                            <span class="image-overlay__overlay">
+                    <span></span>
+                    <i class="doc-icon-album"></i>
+                </span>
+                    </div>
+        <div class="card__body">
+            <div>
+                                    <span>Nutrition</span>
+                
+                                    <span>|</span>
+                
+                                    <span class="color-grey-medium">Diaporama</span>
+                
+                                    <span class="strip bg-color-category-bienetre"></span>
+                            </div>
+                            <h5 class="card__body__title">
+                        <a href="https://www.doctissimo.fr/nutrition/sante-dans-l-assiette/alimentation-laxative"
+               title="10 aliments laxatifs" >10 aliments laxatifs</a>
+                            </h5>
+                                </div>
+    </div>
+
+                            </div>
+                    
+                                                    <div class="doc-slider__container__item">
+                                            
+        
+    <div class="card ">
+        <div class="card__img-wrapper image-overlay">
+            <img
+                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://resize1.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/img/var/doctissimo/storage/images/fr/www/nutrition/sante-dans-l-assiette/aliments-qui-font-gonfler-le-ventre/8350295-1-fre-FR/Ces-aliments-qui-font-gonfler-le-ventre.jpg"
+                                alt="Ces aliments qui font gonfler le ventre"
+                class="doc-img-responsive-100 rounded-lg lazyload"
+            />
+                            <noscript>
+                    <img src="https://resize1.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/img/var/doctissimo/storage/images/fr/www/nutrition/sante-dans-l-assiette/aliments-qui-font-gonfler-le-ventre/8350295-1-fre-FR/Ces-aliments-qui-font-gonfler-le-ventre.jpg" alt="Ces aliments qui font gonfler le ventre" class="doc-img-responsive-100 rounded-lg" />
+                </noscript>
+            
+                            <span class="image-overlay__overlay">
+                    <span></span>
+                    <i class="doc-icon-album"></i>
+                </span>
+                    </div>
+        <div class="card__body">
+            <div>
+                                    <span>Nutrition</span>
+                
+                                    <span>|</span>
+                
+                                    <span class="color-grey-medium">Diaporama</span>
+                
+                                    <span class="strip bg-color-category-bienetre"></span>
+                            </div>
+                            <h5 class="card__body__title">
+                        <a href="https://www.doctissimo.fr/nutrition/sante-dans-l-assiette/aliments-qui-font-gonfler-le-ventre"
+               title="Ces aliments qui font gonfler le ventre" >Ces aliments qui font gonfler le ventre</a>
+                            </h5>
+                                </div>
+    </div>
+
+                            </div>
+                    
+                                                    <div class="doc-slider__container__item">
+                                            
+        
+    <div class="card ">
+        <div class="card__img-wrapper image-overlay">
+            <img
+                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://resize2.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/img/var/doctissimo/storage/images/fr/www/nutrition/fruits-legumes/mieux-conserver-ses-fruits-et-legumes/8344235-1-fre-FR/Comment-mieux-conserver-ses-fruits-et-legumes.jpg"
+                                alt="Comment mieux conserver ses fruits et légumes ?"
+                class="doc-img-responsive-100 rounded-lg lazyload"
+            />
+                            <noscript>
+                    <img src="https://resize2.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/img/var/doctissimo/storage/images/fr/www/nutrition/fruits-legumes/mieux-conserver-ses-fruits-et-legumes/8344235-1-fre-FR/Comment-mieux-conserver-ses-fruits-et-legumes.jpg" alt="Comment mieux conserver ses fruits et légumes ?" class="doc-img-responsive-100 rounded-lg" />
+                </noscript>
+            
+                            <span class="image-overlay__overlay">
+                    <span></span>
+                    <i class="doc-icon-album"></i>
+                </span>
+                    </div>
+        <div class="card__body">
+            <div>
+                                    <span>Nutrition</span>
+                
+                                    <span>|</span>
+                
+                                    <span class="color-grey-medium">Diaporama</span>
+                
+                                    <span class="strip bg-color-category-bienetre"></span>
+                            </div>
+                            <h5 class="card__body__title">
+                        <a href="https://www.doctissimo.fr/nutrition/fruits-legumes/mieux-conserver-ses-fruits-et-legumes"
+               title="Comment mieux conserver ses fruits et légumes ?" >Comment mieux conserver ses fruits et légumes ?</a>
+                            </h5>
+                                </div>
+    </div>
+
+                            </div>
+                    
+                                                    <div class="doc-slider__container__item">
+                                            
+        
+    <div class="card ">
+        <div class="card__img-wrapper image-overlay">
+            <img
+                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://resize1.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/img/var/doctissimo/storage/images/fr/www/nutrition/equilibre-plaisir/cuisine-plaisir/gateaux-sans-oeuf/8269198-1-fre-FR/10-idees-de-gateaux-sans-oeuf.jpg"
+                                alt="10 idées de gâteaux sans œuf"
+                class="doc-img-responsive-100 rounded-lg lazyload"
+            />
+                            <noscript>
+                    <img src="https://resize1.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/img/var/doctissimo/storage/images/fr/www/nutrition/equilibre-plaisir/cuisine-plaisir/gateaux-sans-oeuf/8269198-1-fre-FR/10-idees-de-gateaux-sans-oeuf.jpg" alt="10 idées de gâteaux sans œuf" class="doc-img-responsive-100 rounded-lg" />
+                </noscript>
+            
+                            <span class="image-overlay__overlay">
+                    <span></span>
+                    <i class="doc-icon-album"></i>
+                </span>
+                    </div>
+        <div class="card__body">
+            <div>
+                                    <span>Nutrition</span>
+                
+                                    <span>|</span>
+                
+                                    <span class="color-grey-medium">Diaporama</span>
+                
+                                    <span class="strip bg-color-category-bienetre"></span>
+                            </div>
+                            <h5 class="card__body__title">
+                        <a href="https://www.doctissimo.fr/nutrition/equilibre-plaisir/cuisine-plaisir/gateaux-sans-oeuf"
+               title="10 idées de gâteaux sans œuf" >10 idées de gâteaux sans œuf</a>
+                            </h5>
+                                </div>
+    </div>
+
+                            </div>
+                    
+                                                    <div class="doc-slider__container__item">
+                                            
+        
+    <div class="card ">
+        <div class="card__img-wrapper image-overlay">
+            <img
+                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://resize2.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/img/var/doctissimo/storage/images/fr/www/nutrition/equilibre-plaisir/cuisine-plaisir/gateaux-sans-farine/8265263-1-fre-FR/10-recettes-de-gateaux-sans-farine.jpg"
+                                alt="10 recettes de gâteaux sans farine"
+                class="doc-img-responsive-100 rounded-lg lazyload"
+            />
+                            <noscript>
+                    <img src="https://resize2.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/img/var/doctissimo/storage/images/fr/www/nutrition/equilibre-plaisir/cuisine-plaisir/gateaux-sans-farine/8265263-1-fre-FR/10-recettes-de-gateaux-sans-farine.jpg" alt="10 recettes de gâteaux sans farine" class="doc-img-responsive-100 rounded-lg" />
+                </noscript>
+            
+                            <span class="image-overlay__overlay">
+                    <span></span>
+                    <i class="doc-icon-album"></i>
+                </span>
+                    </div>
+        <div class="card__body">
+            <div>
+                                    <span>Nutrition</span>
+                
+                                    <span>|</span>
+                
+                                    <span class="color-grey-medium">Diaporama</span>
+                
+                                    <span class="strip bg-color-category-bienetre"></span>
+                            </div>
+                            <h5 class="card__body__title">
+                        <a href="https://www.doctissimo.fr/nutrition/equilibre-plaisir/cuisine-plaisir/gateaux-sans-farine"
+               title="10 recettes de gâteaux sans farine" >10 recettes de gâteaux sans farine</a>
+                            </h5>
+                                </div>
+    </div>
+
+                            </div>
+                    
+                                                    <div class="doc-slider__container__item">
+                                            
+        
+    <div class="card ">
+        <div class="card__img-wrapper image-overlay">
+            <img
+                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://resize1.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/img/var/doctissimo/storage/images/fr/www/nutrition/sante-dans-l-assiette/alimentation-des-ados/mon-enfant-est-accro-aux-sucreries/8259263-1-fre-FR/Mon-enfant-est-accro-aux-sucreries.jpg"
+                                alt="Mon enfant est accro aux sucreries"
+                class="doc-img-responsive-100 rounded-lg lazyload"
+            />
+                            <noscript>
+                    <img src="https://resize1.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/img/var/doctissimo/storage/images/fr/www/nutrition/sante-dans-l-assiette/alimentation-des-ados/mon-enfant-est-accro-aux-sucreries/8259263-1-fre-FR/Mon-enfant-est-accro-aux-sucreries.jpg" alt="Mon enfant est accro aux sucreries" class="doc-img-responsive-100 rounded-lg" />
+                </noscript>
+            
+                            <span class="image-overlay__overlay">
+                    <span></span>
+                    <i class="doc-icon-album"></i>
+                </span>
+                    </div>
+        <div class="card__body">
+            <div>
+                                    <span>Nutrition</span>
+                
+                                    <span>|</span>
+                
+                                    <span class="color-grey-medium">Diaporama</span>
+                
+                                    <span class="strip bg-color-category-bienetre"></span>
+                            </div>
+                            <h5 class="card__body__title">
+                        <a href="https://www.doctissimo.fr/nutrition/sante-dans-l-assiette/alimentation-des-ados/mon-enfant-est-accro-aux-sucreries"
+               title="Mon enfant est accro aux sucreries" >Mon enfant est accro aux sucreries</a>
+                            </h5>
+                                </div>
+    </div>
+
+                            </div>
+                    
+                                                    <div class="doc-slider__container__item">
+                                            
+        
+    <div class="card ">
+        <div class="card__img-wrapper image-overlay">
+            <img
+                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://resize.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/img/var/doctissimo/storage/images/fr/www/nutrition/diaporamas/10-recettes-pour-faire-son-pain-maison/8257651-1-fre-FR/10-recettes-pour-faire-son-pain-sans-machine.jpg"
+                                alt="10 recettes pour faire son pain sans machine"
+                class="doc-img-responsive-100 rounded-lg lazyload"
+            />
+                            <noscript>
+                    <img src="https://resize.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/img/var/doctissimo/storage/images/fr/www/nutrition/diaporamas/10-recettes-pour-faire-son-pain-maison/8257651-1-fre-FR/10-recettes-pour-faire-son-pain-sans-machine.jpg" alt="10 recettes pour faire son pain sans machine" class="doc-img-responsive-100 rounded-lg" />
+                </noscript>
+            
+                            <span class="image-overlay__overlay">
+                    <span></span>
+                    <i class="doc-icon-album"></i>
+                </span>
+                    </div>
+        <div class="card__body">
+            <div>
+                                    <span>Nutrition</span>
+                
+                                    <span>|</span>
+                
+                                    <span class="color-grey-medium">Diaporama</span>
+                
+                                    <span class="strip bg-color-category-bienetre"></span>
+                            </div>
+                            <h5 class="card__body__title">
+                        <a href="https://www.doctissimo.fr/nutrition/diaporamas/10-recettes-pour-faire-son-pain-maison"
+               title="10 recettes pour faire son pain sans machine" >10 recettes pour faire son pain sans machine</a>
+                            </h5>
+                                </div>
+    </div>
+
+                            </div>
+                    
+                                                    <div class="doc-slider__container__item">
+                                            
+        
+    <div class="card ">
+        <div class="card__img-wrapper image-overlay">
+            <img
+                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://resize1.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/img/var/doctissimo/storage/images/fr/www/nutrition/sante-dans-l-assiette/bien-manger-pour-etre-en-bonne-sante/cuisine-placard/8198292-1-fre-FR/Pois-chiche-thon-lentilles-des-recettes-100-cuisine-du-placard.jpg"
+                                alt="Pois chiche, thon, lentilles… des recettes 100% &quot;cuisine du placard&quot;"
+                class="doc-img-responsive-100 rounded-lg lazyload"
+            />
+                            <noscript>
+                    <img src="https://resize1.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/img/var/doctissimo/storage/images/fr/www/nutrition/sante-dans-l-assiette/bien-manger-pour-etre-en-bonne-sante/cuisine-placard/8198292-1-fre-FR/Pois-chiche-thon-lentilles-des-recettes-100-cuisine-du-placard.jpg" alt="Pois chiche, thon, lentilles… des recettes 100% &quot;cuisine du placard&quot;" class="doc-img-responsive-100 rounded-lg" />
+                </noscript>
+            
+                            <span class="image-overlay__overlay">
+                    <span></span>
+                    <i class="doc-icon-album"></i>
+                </span>
+                    </div>
+        <div class="card__body">
+            <div>
+                                    <span>Nutrition</span>
+                
+                                    <span>|</span>
+                
+                                    <span class="color-grey-medium">Diaporama</span>
+                
+                                    <span class="strip bg-color-category-bienetre"></span>
+                            </div>
+                            <h5 class="card__body__title">
+                        <a href="https://www.doctissimo.fr/nutrition/sante-dans-l-assiette/bien-manger-pour-etre-en-bonne-sante/cuisine-placard"
+               title="Pois chiche, thon, lentilles… des recettes 100% &quot;cuisine du placard&quot;" >Pois chiche, thon, lentilles… des recettes 100% "cuisine du placard"</a>
+                            </h5>
+                                </div>
+    </div>
+
+                            </div>
+                                    </div>
+            </div>
+            </div>
+        </div>
+    </div>
+                                        <!-- blockEmpty -->
+                            </div>
+                                                                <div id="right-col" class="col-md-4">
+                                
+                                        <div class="doc-sticky-col-container">
+        <div class="doc-sticky-col">
+            <div id="300_atf-col">
+                <script type="text/javascript">
+        if (!trafficing_exclu_full && device !== 'mobile' && device !== 'tablette') {
+            var ads_element_300_atf = document.createElement('div');
+            ads_element_300_atf.setAttribute('data-ad', '300_atf');
+            document.getElementById('300_atf-col').appendChild(ads_element_300_atf);
+        }
+    </script>
+            </div>
+        </div>
+    </div>
+                                                            </div>
+                        
+                                        </div>
+                            
+        </div>
+
+        <div class="doc-mb-4 doc-mb-md-1">
+                    
+                                    
+    
+            <footer>
+    <div class="container">
+
+                <div class="text-center">
+            <div class="doc-mb-2"><img class="logo" title="Doctissimo : Santé et bien être avec Doctissimo" alt="Doctissimo : Santé et bien être avec Doctissimo" src="https://cdn3.prod.docfr.doc-media.fr/bundles/app/images/refonte/logos/doctissimo.svg?1615378331181"></div>
+            <div class="doc-py-1"><span>Suivez-nous sur :</span></div>
+            <div class="social doc-py-1">
+                <a href="https://fr-fr.facebook.com/doctissimo/" target="_blank" rel="noopener noreferrer" title="Facebook Doctissimo"><i class="doc-icon-facebook-circle"></i></a>
+                <a href=" https://www.pinterest.fr/doctissimo/" target="_blank" rel="noopener noreferrer" title="Pinterest Doctissimo"><i class="doc-icon-pinterest-circle"></i></a>
+                <a href="https://www.instagram.com/doctissimo/?hl=fr" target="_blank" rel="noopener noreferrer" title="Instagram Doctissimo"><i class="doc-icon-instagram-circle"></i></a>
+                <a href="https://www.youtube.com/user/Doctissimo" target="_blank" rel="noopener noreferrer" title="Youtube Doctissimo"><i class="doc-icon-youtube-circle"></i></a>
+                <a href="https://twitter.com/doctissimo" target="_blank" rel="noopener noreferrer" title="Twitter Doctissimo"><i class="doc-icon-twitter-circle"></i></a>
+            </div>
+        </div>
+
+                
+                                        <div class="bg-color-blue-0 doc-p-3 doc-mt-2">
+                <span>Voir aussi&nbsp;:</span>
+                <div class="doc-p-1">
+                                            
+                                                    <a href="https://www.doctissimo.fr/html/nutrition/dossiers/sante_assiette_niv2.htm" target="_self">Alimentation et santé</a>
+                                                    <a href="https://www.doctissimo.fr/html/sante/mag_2000/mag1229/dossier/sa_3600_allergies_niv2.htm" target="_self">Allergies alimentaires</a>
+                                                    <a href="https://www.doctissimo.fr/html/nutrition/mag_2002/mag1011/dossier/anorexie_niv2.htm" target="_self">Anorexie</a>
+                                                    <a href="https://www.doctissimo.fr/sante/cholesterol" target="_self">Cholestérol</a>
+                                                    <a href="https://www.doctissimo.fr/html/nutrition/dossiers/regimes/programmes-minceur/index.htm" target="_self">Coaching minceur</a>
+                                                    <a href="https://www.doctissimo.fr/html/nutrition/mag_2001/mag0302/nu_3700_complements_niv2.htm" target="_self">Compléments alimentaires</a>
+                                                    <a href="https://www.doctissimo.fr/html/dossiers/diabete/diabete.htm" target="_self">Diabète</a>
+                                                    <a href="https://www.doctissimo.fr/html/nutrition/aliments/eau.htm" target="_self">Eau</a>
+                                                    <a href="https://www.doctissimo.fr/html/nutrition/equilibre_plaisir/equilibre_plaisir.htm" target="_self">Equilibre et plaisir</a>
+                                                    <a href="https://www.doctissimo.fr/html/nutrition/dossiers/fibres_niv2.htm" target="_self">Fibres</a>
+                                                    <a href="https://www.doctissimo.fr/nutrition/famille-d-aliments/guide-aliments" target="_self">Guide des aliments</a>
+                                                    <a href="https://www.doctissimo.fr/html/nutrition/vitamines_mineraux/magnesium.htm" target="_self">Magnésium</a>
+                                                    <a href="https://www.doctissimo.fr/html/nutrition/poids/obesite_niv2.htm" target="_self">Obésité</a>
+                                                    <a href="https://www.doctissimo.fr/html/sante/phytotherapie/plante-medicinale/guide-phyto.htm" target="_self">Plantes médicinales</a>
+                                                    <a href="https://www.doctissimo.fr/html/nutrition/mag_2001/mag0831/regimes_niv2.htm" target="_self">Régimes</a>
+                                                    <a href="https://www.doctissimo.fr/html/forme/minceur/minceur_niv2.htm" target="_self">Soins minceur</a>
+                                                    <a href="https://www.doctissimo.fr/html/nutrition/vitamines_mineraux/vitamines_niv2.htm" target="_self">Vitamines</a>
+                                                            </div>
+            </div>
+
+                                            <div class="bg-color-blue-0 doc-p-3 doc-mt-1">
+                    <div class="doc-collapse">
+                        <span>Pour aller plus loin&nbsp;:</span>
+                        <a class="doc-collapse__btn collapsed" role="button" data-toggle="collapse" href="#dossiersContent" aria-expanded="false" aria-label="Voir liens pour aller plus loin" aria-controls="dossiersContent">
+                            <i class="doc-icon-arrow-bottom"></i>
+                        </a>
+                        <div class="doc-collapse__content collapse doc-p-1" id="dossiersContent">
+                            
+                                                            <a href="https://www.doctissimo.fr/html/sante/sante.htm" target="_self">Votre santé</a>
+<a href="https://www.doctissimo.fr/html/sante/encyclopedie/encyclopedie_medicale.htm" target="_self">Encyclopédie médicale</a>
+<a href="https://www.doctissimo.fr/html/sante/atlas/index.htm" target="_self">Atlas du corps humain</a>
+<a href="https://www.doctissimo.fr/html/sante/analyses/index_analyses.htm" target="_self">Analyses médicales</a>
+<a href="http://www.doctissimo.fr/sante/Dictionnaire-medical" target="_self">Dictionnaire médical</a>
+<a href="https://www.doctissimo.fr/html/dossiers/sante_principales_maladies.htm" target="_self">Principales maladies</a>
+<a href="https://www.doctissimo.fr/html/dossiers/sante_grands_dossiers.htm" target="_self">Dossiers santé</a>
+<a href="https://videos.doctissimo.fr/sante" target="_self">Vidéos Santé</a>
+<a href="https://www.doctissimo.fr/html/grossesse/grossesse.htm" target="_self">Grossesse</a>
+<a href="https://www.doctissimo.fr/html/grossesse/avant/index_cycle_enceinte.htm" target="_self">Enceinte</a>
+<a href="https://www.doctissimo.fr/html/sante/femmes/grossesse_mois_par_mois.htm" target="_self">Grossesse mois par mois</a>
+<a href="https://www.doctissimo.fr/html/grossesse/grossesse-semaine-par-semaine/grossesse-semaine-par-semaine.htm" target="_self">Grossesse semaine par semaine</a>
+<a href="https://www.doctissimo.fr/html/grossesse/grands-dossiers/dossiers-grossesse.htm" target="_self">Dossiers grossesse</a>
+<a href="https://www.doctissimo.fr/html/bebe/bebe.htm" target="_self" class="bebe">Bébé</a>
+<a href="https://www.doctissimo.fr/html/grossesse/bebe/soins_quot/index_soins_bebe.htm" target="_self">Soins de bébé</a>
+<a href="https://www.doctissimo.fr/html/grossesse/journal_bebe/journal_bebe.htm" target="_self">Journal de bébé</a>
+<a href="https://www.doctissimo.fr/html/grossesse/grands-dossiers/dossiers-bebe.htm" target="_self">Dossiers bébé</a>
+<a href="https://www.doctissimo.fr/html/nutrition/nutrition.htm" target="_self">Nutrition</a>
+<a href="https://www.doctissimo.fr/asp/quizz/visu_form_bmi.asp" target="_self">IMC</a>
+<a href="https://www.doctissimo.fr/html/nutrition/mag_2001/mag0831/regimes_niv2.htm" target="_self">Régime</a>
+<a href="https://www.doctissimo.fr/html/nutrition/bien_manger/equilibre_alimentaire_niv2.htm" target="_self">Equilibre alimentaire</a>
+<a href="https://www.doctissimo.fr/nutrition/regimes/palmares-des-regimes" target="_self">Palmarès des régimes</a>
+<a href="https://www.doctissimo.fr/html/nutrition/dossiers/nutrition_grands_dossiers.htm" target="_self">Dossiers nutrition</a>
+<a href="https://www.doctissimo.fr/html/beaute/beaute.htm" target="_self">Beauté</a>
+<a href="https://www.doctissimo.fr/html/beaute/soins-du-visage/niv2/soins-peau-du-visage.htm" target="_self">Soins du visage</a>
+<a href="https://www.doctissimo.fr/html/beaute/soins-du-corps/niv2/soins-du-corps.htm" target="_self">Soins du corps</a>
+<a href="https://www.doctissimo.fr/html/sante/mag_2001/mag1109/chirugie_esthetique_niv2.htm" target="_self">Chirurgie esthétique</a>
+<a href="https://www.doctissimo.fr/html/beaute/cheveux/niv2/coupes-de-cheveux.htm" target="_self">Coiffure</a>
+<a href="https://www.doctissimo.fr/html/forme/mag_2000/mag1020/maquillage_niv2.htm" target="_self">Maquillage</a>
+<a href="https://www.doctissimo.fr/html/beaute/mariage/niv2/mariage.htm" target="_self">Mariage</a>
+<a href="https://www.doctissimo.fr/html/forme/thalassotherapie/thalassotherapie_niv2.htm" target="_self">Thalasso</a>
+<a href="https://www.doctissimo.fr/html/sante/mag_2002/sem02/mag0712/dossier/cellulite_niv2.htm" target="_self">Cellulite</a>
+<a href="https://www.doctissimo.fr/html/psychologie/psychologie.htm" target="_self">Psychologie</a>
+<a href="https://www.doctissimo.fr/html/psychologie/bien_dans_sa_peau/developpement_personnel.htm" target="_self">Développement personnel</a>
+<a href="https://www.doctissimo.fr/html/psychologie/bien_dormir/index_bien_dormir.htm" target="_self">Sommeil</a>
+<a href="https://www.doctissimo.fr/html/psychologie/stress_angoisse/sommaire_stress.htm" target="_self">Stress</a>
+<a href="https://www.doctissimo.fr/html/psychologie/grands_dossiers/psychologie_grands_dossiers.htm" target="_self">Dossiers psycho</a>
+<a href="https://www.doctissimo.fr/html/forme/forme.htm" target="_self">Forme</a>
+<a href="https://www.doctissimo.fr/html/forme/fitness/fitness_sommaire.htm" target="_self">Fitness</a>
+<a href="https://www.doctissimo.fr/html/forme/sports/niv2/musculation.htm" target="_self">Musculation</a>
+<a href="https://www.doctissimo.fr/html/forme/sports/niv2/sports-collectifs.htm" target="_self">Sports collectifs</a>
+<a href="https://www.doctissimo.fr/html/forme/sports/niv2/sports-individuels.htm" target="_self">Sports individuels</a>
+<a href="https://www.doctissimo.fr/html/forme/dossiers/sport_bienfaits.htm" target="_self">Sport et santé</a>
+<a href="https://www.doctissimo.fr/html/medicaments/medicaments.htm" target="_self">Médicaments</a>
+<a href="https://www.doctissimo.fr/asp/medicaments/medicaments_loupe.htm" target="_self">Guide des médicaments</a>
+<a href="https://www.doctissimo.fr/html/medicaments/dossiers/automedication/automedication.htm" target="_self">Automédication</a>
+<a href="https://www.doctissimo.fr/html/medicaments/niv2/medicament-bon-usage.htm" target="_self">Bon usage du médicament</a>
+<a href="https://www.doctissimo.fr/html/sexualite/sexualite.htm" target="_self">Sexualité</a>
+<a href="https://www.doctissimo.fr/sexualite/kamasutra" target="_self">Kamasutra</a>
+<a href="https://www.doctissimo.fr/html/sexualite/desir/index_se_desir.htm" target="_self">Désir plaisir</a>
+<a href="https://www.doctissimo.fr/html/sexualite/anatomie/se_anat.htm" target="_self">Anatomie du sexe</a>
+<a href="https://www.doctissimo.fr/html/sexualite/sexes.htm" target="_self">Le sexe de A à Z</a>
+<a href="https://www.doctissimo.fr/html/sexualite/grands_dossiers/sexualite_grands_dossiers.htm" target="_self">Dossiers sexo</a>
+<a href="https://www.doctissimo.fr/medecines-douces" target="_self">Médecines douces</a>
+<a href="https://www.doctissimo.fr/html/sante/mag_2001/mag0914/dossier/acupuncture_niv2.htm" target="_self">Acupuncture</a>
+<a href="https://www.doctissimo.fr/html/sante/mag_2003/sem02/mag0815/sa_6966_aromatherapie_essence_sante.htm" target="_self">Aromathérapie</a>
+<a href="https://www.doctissimo.fr/sante/aromatherapie/guide-huiles-essentielles" target="_self">Huiles essentielles</a>
+<a href="https://www.doctissimo.fr/sante/homeopathie" target="_self">Homéopathie</a>
+<a href="https://www.doctissimo.fr/html/dossiers/luminotherapie/luminotherapie.htm" target="_self">Luminothérapie</a>
+<a href="https://www.doctissimo.fr/html/dossiers/phytotherapie.htm" target="_self">Phytothérapie</a>
+<a href="https://www.doctissimo.fr/html/sante/phytotherapie/plante-medicinale/guide-phyto.htm" target="_self">Plantes médicinales</a>
+<a href="https://www.doctissimo.fr/html/dossiers/medecines-douces/niv2/medecines-douces-sophrologie.htm" target="_self">Sophrologie</a>
+                                                    </div>
+                    </div>
+                </div>
+                    
+                    <div class="bg-color-blue-0 doc-p-3 doc-mt-1 d-flex align-items-center flex-wrap">
+        <span>Mentions légales&nbsp;:</span>
+        <div class="doc-p-1">
+                        <a href="javascript:Didomi.preferences.show()" title="Préférences de cookies">Préférences de cookies</a>
+                        <a href="https://www.doctissimo.fr/notice_legale.htm" title="Mentions légales">Mentions légales</a>
+            <a href="https://www.doctissimo.fr/equipe/charte/charte-donnees-personnelles-cookies" title="Charte de données personnelles et cookies">Charte de données personnelles et cookies</a>
+        </div>
+    </div>
+
+    </div>
+</footer>
+            </div>
+
+            <script defer src="https://cdn3.prod.docfr.doc-media.fr/bundles/app/js/refonte/slideshow.min.js?1615378331181" ></script>
+
+        <script defer src="https://cdn.prod.docfr.doc-media.fr/bundles/app/js/doctissimo_footer_tags.min.js?1615378331181"></script>
+
+            
+<script>
+    /*loadCss*/
+    !function(w){"use strict";var loadCSS=function(href,before,media){function ready(cb){return doc.body?cb():void setTimeout(function(){ready(cb)})}function loadCB(){ss.addEventListener&&ss.removeEventListener("load",loadCB),ss.media=media||"all"}var ref,doc=w.document,ss=doc.createElement("link");if(before)ref=before;else{var refs=(doc.body||doc.getElementsByTagName("head")[0]).childNodes;ref=refs[refs.length-1]}var sheets=doc.styleSheets;ss.rel="stylesheet",ss.href=href,ss.media="only x",ready(function(){ref.parentNode.insertBefore(ss,before?ref:ref.nextSibling)});var onloadcssdefined=function(cb){for(var resolvedHref=ss.href,i=sheets.length;i--;)if(sheets[i].href===resolvedHref)return cb();setTimeout(function(){onloadcssdefined(cb)})};return ss.addEventListener&&ss.addEventListener("load",loadCB),ss.onloadcssdefined=onloadcssdefined,onloadcssdefined(loadCB),ss};"undefined"!=typeof exports?exports.loadCSS=loadCSS:w.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+
+    /*link[rel=preload] polyfill*/
+    !function(w){if(w.loadCSS){var rp=loadCSS.relpreload={};if(rp.support=function(){try{return w.document.createElement("link").relList.supports("preload")}catch(e){return!1}},rp.poly=function(){for(var links=w.document.getElementsByTagName("link"),i=0;i<links.length;i++){var link=links[i];"preload"===link.rel&&"style"===link.getAttribute("as")&&(w.loadCSS(link.href,link),link.rel=null)}},!rp.support()){rp.poly();var run=w.setInterval(rp.poly,300);w.addEventListener&&w.addEventListener("load",function(){w.clearInterval(run)}),w.attachEvent&&w.attachEvent("onload",function(){w.clearInterval(run)})}}}(this);
+</script>
+</body>
+</html>
